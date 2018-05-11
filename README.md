@@ -1,2 +1,2 @@
-# Hacks-and-Code-Snippets
+# Hacks and Code Snippets
 DBMS, Terminal Hacks and Code Snippets
