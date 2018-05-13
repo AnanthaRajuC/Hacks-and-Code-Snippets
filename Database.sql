@@ -122,6 +122,15 @@ SELECT * FROM [schema.table_name];
 
 ****************************************************************************************
 
+-- create table with Auto Increment Id as Primary key & default current timeStamp column
+CREATE TABLE `[table_name]` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `dateTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='Fruits Table';
+
+****************************************************************************************
+
 -- update records
 UPDATE [schema.table_name]
 SET [column_one] = 'value_one', [column_two] = 'value_two'
