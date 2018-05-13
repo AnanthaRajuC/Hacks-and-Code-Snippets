@@ -1,8 +1,28 @@
+-- drop schema
+DROP SCHEMA
+IF EXISTS [schema_name];
+
+-- create schema
+CREATE SCHEMA [schema_name];
+
+-- use schema
+USE [schema_name];
+
 -- Create user 
 create user 'USERNAME'@'IPADDRESS' identified by 'PASSWORD';
 
 -- Grant privileges to user
 grant all privileges on *.* to 'USERNAME'@'IPADDRESS' with grant option;
+
+****************************************************************************************
+
+-- Dumping Data Using INSERT statement
+
+SET AUTOCOMMIT=O;
+
+COMMIT;
+
+SET AUTOCOMMIT=1;
 
 ****************************************************************************************
 
