@@ -184,7 +184,14 @@ SELECT
 FROM
 [schema.table_name]
 GROUP BY [column_name]
-HAVING COUNT([column_name]) > N;
+HAVING COUNT([column_name]) > N; -- N is the number of times the record is occuring
+
+-- Check for Duplicates based on multiple Columns & get the count of duplicates
+
+SELECT [column_name1], [column_name2], COUNT([column_name1]), COUNT([column_name2]) 
+FROM myusers.user
+GROUP BY [column_name1], [column_name2]
+HAVING count(*) > 1;
 
 SELECT SYSDATE();
 
