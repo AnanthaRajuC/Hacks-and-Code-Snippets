@@ -177,5 +177,14 @@ LINES TERMINATED BY '\n'
 
 ****************************************************************************************
 
+-- Check for Duplicates based on 1 Column & get the count of duplicates
+
+SELECT 
+[column_name], COUNT([column_name])
+FROM
+[schema.table_name]
+GROUP BY [column_name]
+HAVING COUNT([column_name]) > N;
+
 SELECT SYSDATE();
 
