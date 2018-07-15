@@ -10,7 +10,7 @@
 |Taskkill /PID PROCESS_ID_OF_RUNNING_APP /F||
 
 Running Spring Boot Project Jar Build
-Java - jar springBootProject.Jar
+`Java - jar springBootProject.Jar`
 
 Running Multiple Instances of Spring Boot Project on Different Ports
-Java -jar -Dserver.port=9090 springBootProject.Jar
+`Java -jar -Dserver.port=9090 springBootProject.Jar`
