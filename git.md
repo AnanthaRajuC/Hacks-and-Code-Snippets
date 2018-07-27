@@ -66,3 +66,9 @@ others
 
 - `git log --help` opens a local git-log manual (html) page
 - `gitk` opens a built-in git GUI desktop application
+
+---
+
+### Reference
+
+- <a href="https://nvie.com/posts/a-successful-git-branching-model/" target="_blank" >A successful Git branching model</a>
