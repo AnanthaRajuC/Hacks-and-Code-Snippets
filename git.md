@@ -72,3 +72,4 @@ others
 ### Reference
 
 - <a href="https://nvie.com/posts/a-successful-git-branching-model/" target="_blank" >A successful Git branching model</a>
+- <a href="https://nvie.com/posts/a-successful-git-branching-model/" target="_blank" >Pro Git</a> by Scott Chacon and Ben Straub is available to read online for free.
