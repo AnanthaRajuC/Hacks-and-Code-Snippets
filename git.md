@@ -32,7 +32,10 @@ pushing changes
 branching
 
 - **Branches** are used to develop features isolated from each other.
-- **master** branch is the "default" branch in a repository.
+- **master** branch is the **default** branch in a repository.
 - other branches are used for development and merged back to the master branch upon completion.
 
-- `git checkout -b feature_x` create a new branch named "feature_x" and switch to it using
+- `git checkout -b feature_x` create a new branch named **feature_x** and switch to it using
+- `git checkout master` switch back to master branch
+- `git branch -d feature_x` delete the **feature_x** branch
+- `git push origin <branch>` push from local to remote **branch**
