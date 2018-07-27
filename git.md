@@ -39,3 +39,27 @@ branching
 - `git checkout master` switch back to master branch
 - `git branch -d feature_x` delete the **feature_x** branch
 - `git push origin <branch>` push from local to remote **branch**
+
+---
+
+`git pull` update your local repository to the newest remote commit
+
+---
+
+tagging
+
+- `git tag 1.0.0 1b2e1d63ff` create a new tag named <a href="https://semver.org/" target="_blank" >1.0.0</a> where 1b2e1d63ff stands for the first 10 characters of the commit id you want to reference with your tag
+
+---
+
+log
+
+- `git log` displays repository commit history
+- `git log --author=bob` displays only the commits of a certain author
+- `git log --pretty=oneline` displays a very compressed log where each commit is one line
+- `git log --graph --oneline --decorate --all` displays an ASCII art tree of all the **branches**, decorated with the names of **tags** and **branches**
+- `git log --name-status` displays only which files have changed
+
+---
+
+- `git log --help` opens a local git-log manual (html) page
