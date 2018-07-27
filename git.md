@@ -62,4 +62,7 @@ log
 
 ---
 
+others
+
 - `git log --help` opens a local git-log manual (html) page
+- `gitk` opens a built-in git GUI desktop application
