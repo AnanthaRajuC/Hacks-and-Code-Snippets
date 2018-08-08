@@ -4,6 +4,16 @@ DML - Data Manipulation Language - INSERT, UPDATE, DELETE
 DTL/TCL - Data Transition/Transition Control Language - COMMIT, ROLLBACK, SAVE POINT
 DCL - Data Control Language - GRANT, REVOKE
 
+****************************************************************************************
+
+-- Retrieve MySQL Version & other details
+
+SELECT VERSION();
+
+SHOW VARIABLES LIKE "%version%";
+
+****************************************************************************************
+
 -- drop schema
 DROP SCHEMA
 IF EXISTS [schema_name];
