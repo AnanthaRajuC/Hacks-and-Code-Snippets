@@ -7,3 +7,11 @@
 | date  |  Show or change the current date.|
 |  dir | Display a list of files and folders contained inside the folder that you are currently working in.  |
 |  exit | End the cmd.exe (Windows) or command.com (MS-DOS) session that you're currently working in.   |
+
+
+### Open Command Prompt from a specific folder
+
+- Open the folder location 
+- Press **alt** + **D**
+- Type **cmd**
+- Press **enter**
