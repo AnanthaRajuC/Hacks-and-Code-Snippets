@@ -1,4 +1,4 @@
-# Command Prompt Commands
+# CMD Prompt Commands
 
 
 |  Command |  Description |
@@ -8,6 +8,7 @@
 |  dir | Display a list of files and folders contained inside the folder that you are currently working in.  |
 |  exit | End the cmd.exe (Windows) or command.com (MS-DOS) session that you're currently working in.   |
 
+---
 
 ### Open Command Prompt from a specific folder
 
@@ -26,3 +27,4 @@
 - open Command Prompt and test `https://postman-echo.com/get?test=123`
 - Expected Response `{"args":{"test":"123"},"headers":{"host":"postman-echo.com","accept":"*/*","user-agent":"curl/7.55.1","x-forwarded-port":"443","x-forwarded-proto":"https"},"url":"https://postman-echo.com/get?test=123"}`
 
+---
