@@ -59,6 +59,8 @@ log
 - `git log --pretty=oneline` displays a very compressed log where each commit is one line
 - `git log --graph --oneline --decorate --all` displays an ASCII art tree of all the **branches**, decorated with the names of **tags** and **branches**
 - `git log --name-status` displays only which files have changed
+- `git log --pretty="%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s"`
+- `git log --all --decorate --oneline --graph`
 
 ---
 
