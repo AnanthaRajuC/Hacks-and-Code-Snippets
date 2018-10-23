@@ -14,3 +14,16 @@ Running Spring Boot Project Jar Build
 
 Running Multiple Instances of Spring Boot Project on Different Ports
 `Java -jar -Dserver.port=9090 springBootProject.Jar`
+
+---
+
+`"{\"from\":\"you\",\"to\":\"me\",\"amount\":200}"`
+
+```
+{
+  "from": "you",
+  "to": "me",
+  "amount": 200
+}
+```
+---
