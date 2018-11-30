@@ -6,6 +6,14 @@ DCL - Data Control Language - GRANT, REVOKE
 
 ****************************************************************************************
 
+-- Show tables in a schema
+SHOW TABLES;
+
+-- Displays names of the columns in your table or what types they have
+DESCRIBE [table_name];
+
+****************************************************************************************
+
 -- Retrieve MySQL Version & other details
 
 SELECT VERSION();
