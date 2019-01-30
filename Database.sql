@@ -4,6 +4,8 @@ DML - Data Manipulation Language - INSERT, UPDATE, DELETE
 DTL/TCL - Data Transition/Transition Control Language - COMMIT, ROLLBACK, SAVE POINT
 DCL - Data Control Language - GRANT, REVOKE
 
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+
 ****************************************************************************************
 
 -- Show tables in a schema
