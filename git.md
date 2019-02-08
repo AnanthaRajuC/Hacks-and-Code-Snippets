@@ -83,4 +83,5 @@ examples
 
 - <a href="https://github.com/k88hudson/git-flight-rules" target="_blank" >Flight rules for Git </a>- a guide for programmers using Git about what to do when things go wrong
 - <a href="https://nvie.com/posts/a-successful-git-branching-model/" target="_blank" >A successful Git branching model</a>
+- <a href="https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html" target="_blank" >A Note About Git Commit Messages</a>
 - <a href="https://nvie.com/posts/a-successful-git-branching-model/" target="_blank" >Pro Git</a> by <a href="http://scottchacon.com/about.html" target="_blank" >Scott Chacon</a> and Ben Straub is available to read online for free and download (PDF, EPUB, MOBI).
