@@ -68,6 +68,7 @@ others
 
 - `git log --help` opens a local git-log manual (html) page
 - `gitk` opens a built-in git GUI desktop application
+- `git config --global commit.template ~/.gitmessage.txt`tell git to use `gitmessage.txt` as the default message that appears in your editor when you run git commit
 
 ---
 
