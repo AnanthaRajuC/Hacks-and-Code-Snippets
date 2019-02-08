@@ -75,6 +75,7 @@ others
 examples
 
 - `git log --oneline -5 --author cbeams --before "Fri Mar 26 2009"`
+- `git config --global commit.template C:\CC_Applications/gitmessage.txt`
 
 ---
 
