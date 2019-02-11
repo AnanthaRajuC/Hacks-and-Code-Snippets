@@ -220,4 +220,17 @@ GROUP BY [column_name1], [column_name2]
 HAVING count(*) > 1;
 
 SELECT SYSDATE();
+                       
+-- create table with primary key 
+                       
+CREATE TABLE `data table` (
+  `cust_name` text,
+  `username` text,
+  `cust_mobile` bigint(20) DEFAULT NULL,
+  `cust_email` text,
+  `relationship_manager` text,
+  `mobile_no` text,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;                       
 
