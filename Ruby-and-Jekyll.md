@@ -1,6 +1,6 @@
 # Ruby and Jekyll
 
-## Install Ruby on Windows via RubyInstaller
+## Install Ruby on Windows via RubyInstaller with DevKit
 - <https://rubyinstaller.org/downloads/>
 
 ## Ruby Developmemnt Environment
