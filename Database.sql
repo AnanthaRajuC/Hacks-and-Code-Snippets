@@ -258,3 +258,7 @@ DROP (column_name);
                        
 ALTER TABLE [schema.table_name]
 DROP (column1,column2,.....,columnN);
+                       
+ALTER TABLE [schema.table_name]
+RENAME COLUMN [column_name]
+TO [column_name];
