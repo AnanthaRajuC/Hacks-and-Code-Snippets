@@ -248,3 +248,7 @@ CREATE TABLE `data table` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;                       
 
+****************************************************************************************
+                       
+ALTER TABLE [schema.table_name]
+RENAME COLUMN [column_name] TO [column_name];                      
