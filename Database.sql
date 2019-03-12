@@ -175,7 +175,13 @@ CREATE TABLE `[table_name]` (
 UPDATE [schema.table_name]
 SET [column_one] = 'value_one', [column_two] = 'value_two'
 WHERE [condition]; -- ex: CustomerID = 1;
-
+                       
+-- Update a column value, replacing part of a string
+UPDATE [schema.table_name]
+SET [column_name] = REPLACE(column_name, 'original_text_part', 'new_text_part');  
+                       
+****************************************************************************************
+                       
 -- Delete Records 
 DELETE FROM [schema.table_name]
 WHERE [condition]; -- ex: CustomerName='Alfreds Futterkiste';
@@ -201,11 +207,6 @@ SELECT CustomerName, /*City,*/ Country FROM Customers; -- In-line comment
 
 ****************************************************************************************
 
--- Update a column value, replacing part of a string
-UPDATE [schema.table_name]
-SET [column_name] = REPLACE(column_name, 'original_text_part', 'new_text_part');
-
-****************************************************************************************
 -- Load table from a CSV file to a table
 LOAD DATA LOCAL INFILE  
 'D:filename.csv'
