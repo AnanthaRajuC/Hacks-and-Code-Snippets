@@ -9,3 +9,6 @@
 # gcloud config list project
 
 ## list the project ID
+
+create and switch into a folder named test
+mkdir test && cd test
