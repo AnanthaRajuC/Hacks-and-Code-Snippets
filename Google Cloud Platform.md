@@ -11,7 +11,7 @@
 ## mkdir test && cd test
 
 # set your default compute zone to us-central1-a
-## gcloud config set compute/zone us-central1-a
+## gcloud config set compute/zone [ZONE-NAME]
 
 # Create a Kubernetes Engine cluster (Kubernetes Engine will provision a few Virtual Machines)
 ## gcloud container clusters create [CLUSTER-NAME]
@@ -54,3 +54,12 @@
 
 # list of endpoints on the monolith service
 ## kubectl describe services [SERVICE-NAME] | grep Endpoints
+
+# Download and install the helm binary
+## wget https://storage.googleapis.com/kubernetes-helm/helm-v2.9.1-linux-amd64.tar.gz
+
+# Create a kubernetes cluster
+gcloud container clusters create [CLUSTER-NAME] \
+--num-nodes 2 \
+--machine-type n1-standard-2 
+
