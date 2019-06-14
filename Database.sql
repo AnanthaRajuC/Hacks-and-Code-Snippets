@@ -6,6 +6,12 @@ DCL - Data Control Language - GRANT, REVOKE
 
 SELECT user,authentication_string,plugin,host FROM mysql.user;
 
+-- List all the users;
+SELECT * FROM mysql.user;
+
+-- Reset password;
+UPDATE mysql.user SET Password=PASSWORD('[password]') WHERE User='[username]';
+
 ****************************************************************************************
 
 -- Show tables in a schema
