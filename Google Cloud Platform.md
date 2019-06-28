@@ -1,3 +1,6 @@
+gcloud auth login - authorize gcloud to access the Cloud Platform with Google user credentials
+gcloud auth login [ACCOUNT]
+
 # gcloud
 ## gcloud is the command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell
 
