@@ -1,12 +1,15 @@
-gcloud auth login - authorize gcloud to access the Cloud Platform with Google user credentials
-gcloud auth login [ACCOUNT]
+##### gcloud auth login - authorize gcloud to access the Cloud Platform with Google user credentials
+#### `gcloud auth login [ACCOUNT]`
 
-gcloud config set account [ACCOUNT]
+`gcloud config set account [ACCOUNT]`
 
-gcloud config set project [PROJECT]
+`gcloud config set project [PROJECT]`
 
-update all the installed Google Cloud SDK components
-gcloud components update
+##### update all the installed Google Cloud SDK components
+#### `gcloud components update`
+
+##### Find out where Google Cloud SDK is installed
+#### `gcloud info --format="value(installation.sdk_root)"`
 
 #### gcloud
 ##### gcloud is the command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell
