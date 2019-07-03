@@ -14,6 +14,32 @@ UPDATE mysql.user SET Password=PASSWORD('[password]') WHERE User='[username]';
 
 ****************************************************************************************
 
+SELECT NOW() FROM DUAL;
+-- 2006-07-01 10:02:41 
+
+SELECT SYSDATE() FROM DUAL;
+-- 2006-07-01 10:03:21 
+
+SELECT CURRENT_TIMESTAMP() FROM DUAL;
+-- 2006-07-01 10:04:03 
+
+SELECT LOCALTIME() FROM DUAL;
+-- 2006-07-01 10:07:37 
+
+SELECT LOCALTIMESTAMP() FROM DUAL;
+-- 2006-07-01 10:08:08 
+
+SELECT UTC_TIMESTAMP() FROM DUAL;
+-- 2006-07-01 14:09:49 
+
+SELECT UTC_TIME() FROM DUAL;
+-- 14:09:22 
+
+SELECT CURRENT_TIME() FROM DUAL;
+-- 10:02:58
+
+****************************************************************************************
+
 -- Show tables in a schema
 SHOW TABLES;
 
