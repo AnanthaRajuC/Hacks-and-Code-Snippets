@@ -295,3 +295,8 @@ DROP (column1,column2,.....,columnN);
 ALTER TABLE [schema.table_name]
 RENAME COLUMN [column_name]
 TO [column_name];
+
+****************************************************************************************
+
+-- column_name is datetime
+ SELECT * FROM [schema.table_name] where date(column_name) = SUBDATE(curdate(),1);                      
