@@ -11,3 +11,4 @@ Compilation of commonly used and diversehacks & code snippets
 - <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Command%20Prompt%20Commands.md" target="_blank" >Windows Command Prompt</a> 
 - <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Microsoft%20Excel.md" target="_blank" >Microsoft Excel Spreadsheet</a> 
 - <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Others.md" target="_blank" >Others</a> 
+- <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Spring%20Boot%20Application%20-%20Sample.md" target="_blank" >Spring Boot Application - Samples</a> 
