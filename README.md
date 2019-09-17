@@ -3,6 +3,7 @@
 Compilation of commonly used and diversehacks & code snippets
 
 - <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Database.sql" target="_blank" >SQL</a> 
+- <a href="https://anantharajuc.github.io/Git/" target="_blank" >Git</a> 
 - <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Angular.md" target="_blank" >Angular</a> 
 - <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Maven.md" target="_blank" >Maven</a> 
 - <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/OpenSSL.md" target="_blank" >Open SSL</a> 
