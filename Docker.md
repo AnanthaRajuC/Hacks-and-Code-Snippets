@@ -4,6 +4,7 @@
 |----------|--------------|
 |`docker run hello-world`       |run a hello world container.                                             |
 |`docker images`                |take a look at the container images.                                     |
+|`docker version`               |this will render all docker version information                          |
 |`docker image ls`              |take a look at the container images.                                     |
 |`docker ps`                    |list all the running containers.                                         |
 |`docker ps -a`                 |list all the containers, including the ones that have finished executing.|
@@ -12,3 +13,6 @@
 |`docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' [container_id]`|Use --format to inspect specific fields from the returned container's metadata JSON|         |
 |`docker stop $(docker ps -q) [container_id]`|stop a container                                            |
 |`docker rm $(docker ps -aq)`   |Stop and remove all containers                                           |
+|`docker-machine ip`            |Find Docker Toolbox IP address                                           |
+|`docker login`                 |Log in to a Docker registry                                              |
+
