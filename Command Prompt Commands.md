@@ -7,6 +7,7 @@
 | date  |  Show or change the current date.|
 |  dir | Display a list of files and folders contained inside the folder that you are currently working in.  |
 |  exit | End the cmd.exe (Windows) or command.com (MS-DOS) session that you're currently working in.   |
+|systeminfo| Find out when your Windows was installed and other system information|
 
 ---
 
