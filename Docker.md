@@ -11,7 +11,7 @@
 |`docker logs -f [container_id]`|look at the logs of a container                                          |
 |`docker inspect [container_id]`|examine a container's metadata in Docker                                 |
 |`docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' [container_id]`|Use --format to inspect specific fields from the returned container's metadata JSON|         |
-|`docker stop $(docker ps -q) [container_id]`|stop a container                                            |
+|`docker stop [container_id]`   |stop a container                                                         |
 |`docker rm $(docker ps -aq)`   |Stop and remove all containers                                           |
 |`docker-machine ip`            |Find Docker Toolbox IP address                                           |
 |`docker login`                 |Log in to a Docker registry                                              |
