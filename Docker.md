@@ -15,4 +15,5 @@
 |`docker rm $(docker ps -aq)`   |Stop and remove all containers                                           |
 |`docker-machine ip`            |Find Docker Toolbox IP address                                           |
 |`docker login`                 |Log in to a Docker registry                                              |
+|`docker build -t [project name] .` |Build a Docker Image                                                 |
 
