@@ -9,6 +9,8 @@
 |jps -v||
 |Taskkill /PID PROCESS_ID_OF_RUNNING_APP /F||
 |echo %JAVA_HOME%|print environment variable JAVA_HOME|
+|echo %JAVA_HOME%|print environment variable JAVA_HOME|
+|keytool -list -keystore "%JAVA_HOME%/jre/lib/security/cacerts"|List Trusted CA Certs. default keystore password "changeit"|
 
 Running Spring Boot Project Jar Build
 `Java - jar springBootProject.Jar`
