@@ -8,6 +8,7 @@
 |jps -lv|jps is a useful tool for viewing information about running java processes.|
 |jps -v||
 |Taskkill /PID PROCESS_ID_OF_RUNNING_APP /F||
+|echo %JAVA_HOME%|print environment variable JAVA_HOME|
 
 Running Spring Boot Project Jar Build
 `Java - jar springBootProject.Jar`
