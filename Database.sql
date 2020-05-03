@@ -299,4 +299,21 @@ TO [column_name];
 ****************************************************************************************
 
 -- column_name is datetime
- SELECT * FROM [schema.table_name] where date(column_name) = SUBDATE(curdate(),1);                      
+ SELECT * FROM [schema.table_name] where date(column_name) = SUBDATE(curdate(),1);       
+                       
+****************************************************************************************
+                       
+-- Server Status Variables -- https://dev.mysql.com/doc/refman/8.0/en/server-status-variables.html
+  
+-- the number of active connections                       
+show status 
+where `variable_name` = 'Threads_connected';      
+                       
+-- aggregate values over all connections  
+SHOW GLOBAL STATUS;
+                       
+-- aggregate values for the current connection
+SHOW SESSION STATUS;                       
+                       
+-- show processlist
+show processlist;                       
