@@ -2,8 +2,6 @@
 
 Compilation of commonly used and diversehacks & code snippets
 
-- <a href="Angular.md" target="_blank" >Angular</a>
-- <a href="/Angular.md" target="_blank" >Angular</a>
 - [Angular](Angular.md)
 - [Application Version Check](ApplicationVersion.md)
 - [Command Prompt](CommandPrompt.md)
