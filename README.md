@@ -2,13 +2,16 @@
 
 Compilation of commonly used and diversehacks & code snippets
 
-- <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Database.sql" target="_blank" >SQL</a> 
-- <a href="https://anantharajuc.github.io/Git/" target="_blank" >Git</a> 
-- <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Angular.md" target="_blank" >Angular</a> 
-- <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Maven.md" target="_blank" >Maven</a> 
-- <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/OpenSSL.md" target="_blank" >Open SSL</a> 
-- <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Google%20Cloud%20Platform.md" target="_blank" >Google Cloud Platform</a> 
-- <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Command%20Prompt%20Commands.md" target="_blank" >Windows Command Prompt</a> 
-- <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Microsoft%20Excel.md" target="_blank" >Microsoft Excel Spreadsheet</a> 
-- <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Others.md" target="_blank" >Others</a> 
-- <a href="https://github.com/AnanthaRajuC/Hacks-and-Code-Snippets/blob/master/Spring%20Boot%20Application%20-%20Sample.md" target="_blank" >Spring Boot Application - Samples</a> 
+- [Angular](Angular.md)
+- [Application Version Check](ApplicationVersion.md)
+- [Command Prompt](CommandPrompt.md)
+- [Database](Database.md)
+- [Docker](Docker.md)
+- [Git](https://anantharajuc.github.io/Git/)
+- [Google Cloud Platform](Google Cloud Platform.md)
+- [Maven](Maven.md)
+- [Microsoft Excel](Microsoft Excel.md)
+- [OpenSSL](OpenSSL.md)
+- [Others](Others.md)
+- [Ruby-and-Jekyll](Ruby-and-Jekyll.md)
+- [Spring Boot Application - Sample](Spring Boot Application - Sample.md)
