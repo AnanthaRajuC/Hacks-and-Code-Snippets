@@ -4,6 +4,10 @@
 |------------------------------------------------|------------------------------------------------------------------------------------|
 |`mvn package -Dmaven.test.skip=true`            | The project will be built without compiling the tests.                             |
 |`mvn clean package`                             | Compiles the code and also packages it.                                            |
+|`mvn cobertura:cobertura`                       | Generates Cobertura code coverage reports.                                         |
+
+|               Test Command                     |                              Description                                           |
+|------------------------------------------------|------------------------------------------------------------------------------------|
 |`mvn test`                                      | Run all the unit test classes.                                                     |
 |`mvn -Dtest=TestApp1 test`                      | Run a single test class.                                                           |
 |`mvn -Dtest=TestApp1,TestApp2 test`             | Run multiple test classes.                                                         |
