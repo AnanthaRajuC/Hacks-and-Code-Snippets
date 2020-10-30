@@ -1,10 +1,18 @@
-## Maven
+## Others
+
+|                    Command                     |                              Description                                           |
+|------------------------------------------------|------------------------------------------------------------------------------------|
+|`mvn cobertura:cobertura`                       | Generates Cobertura code coverage reports.                                         |
+|`mvn sonar:sonar`                               | Run Sonar Code analysis.                                                           |
+
+## Build
 
 |                    Command                     |                              Description                                           |
 |------------------------------------------------|------------------------------------------------------------------------------------|
 |`mvn package -Dmaven.test.skip=true`            | The project will be built without compiling the tests.                             |
 |`mvn clean package`                             | Compiles the code and also packages it.                                            |
-|`mvn cobertura:cobertura`                       | Generates Cobertura code coverage reports.                                         |
+
+## Test
 
 |               Test Command                     |                              Description                                           |
 |------------------------------------------------|------------------------------------------------------------------------------------|
