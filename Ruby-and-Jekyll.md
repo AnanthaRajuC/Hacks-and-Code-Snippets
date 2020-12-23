@@ -10,3 +10,6 @@
 - Build the site and make it available on a local server - `bundle exec jekyll serve`
 - Now browse to <http://localhost:4000>
  
+---
+
+- List local gems `gem list jekyll`
