@@ -2,12 +2,15 @@
 
 | Application|        Command       |
 |------------|:---------------------|
+|Chocolatey  |`Chocolatey --version`|
+|Git         |`git version`         |
+|Go          |`go version`          |
 |Java        |`java -version`       |
+|Jekyll      |`jekyll -v`           |
+|Kubectl     |`kubectl version`     |
 |Maven       |`mvn -version`        |
+|MongoDB     |`mongo version`       |
 |Node.js     |`node -v`             |
 |npm         |`npm -v`              |
 |Python      |`python --version`    |
-|Chocolatey  |`Chocolatey --version`|
-|Kubectl     |`kubectl version`     |
-|Git         |`git version`         |
-|Go          |`go version`          |
+|Ruby        |`ruby -v`             |
