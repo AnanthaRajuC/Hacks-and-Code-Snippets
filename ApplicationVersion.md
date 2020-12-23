@@ -3,6 +3,7 @@
 | Application|        Command       |
 |------------|:---------------------|
 |Chocolatey  |`Chocolatey --version`|
+|Docker      |`docker version`      |
 |Git         |`git version`         |
 |Go          |`go version`          |
 |Java        |`java -version`       |
