@@ -9,6 +9,8 @@
 |`-c`      | Run **bash** commands preceding `-c` argument and exit. Example `docker run -ti ubuntu bash -c "echo hello world; ls; echo bye;"`|
 |`-d`      | **Detached Mode**. Start a container and leave it running in the background. Example `docker run -d -ti ubuntu bash`             |
 
+**NOTE:** To Jump away from a container started in a non-detached mode, use the following key sequence <kbd>ctrl</kbd>+<kbd>p</kbd>, <kbd>ctrl</kbd>+<kbd>q</kbd>
+
 ## Docker Meta
 
 |        Command                             |                        Description                        |
