@@ -4,9 +4,10 @@
 
 |        Command                             |                        Description                        |
 |--------------------------------------------|-----------------------------------------------------------| 
-|`docker-machine ip default`				 | check your docker IP default, usually **192.168.99.102**	 |
+|`docker-machine ip default`				         | check your docker IP default, usually **192.168.99.102**	 |
 |`docker-machine ip`                         | Find Docker Toolbox IP address, usually **192.168.99.102**|
 |`docker version`                            | displays the docker version information                   |
+|`docker info`                               | Display system-wide information                           |
 
 ## Docker Volumes
 
