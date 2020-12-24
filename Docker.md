@@ -75,6 +75,7 @@
 |`docker tag [image_id] [new_image_name]`         | Tag an image with a human readable name            								|
 |`docker commit [container_name] [new_image_name]`| Create image from a stopped container with a human readable name  |
 |`docker restart [container_name]`  		          | restart a container.           								                    |
+|`docker exec -ti [container_name] [process]`  		| Add a process to a running container. Can't add ports, volumes, and so on. Example: `docker exec -ti nostalgic_northcutt bash` opens a new bash shell|
 
 ## Docker Management
 
