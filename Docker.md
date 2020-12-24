@@ -1,5 +1,12 @@
 # Docker and Docker Hub
 
+## Docker Command Arguments
+
+| Argument |                               Description                                   |
+|----------|-----------------------------------------------------------------------------| 
+|`-ti`     | Terminal Interactive. Example `docker run -ti ubuntu:latest bash`	         |
+|`--rm`    | Delete container when it exits. Example `docker run --rm -ti ubuntu sleep 5`|
+
 ## Docker Meta
 
 |        Command                             |                        Description                        |
