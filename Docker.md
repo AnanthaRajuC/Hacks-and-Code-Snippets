@@ -2,12 +2,13 @@
 
 ## Docker Command Arguments
 
-| Argument |                                                            Description                                                           |
-|----------|----------------------------------------------------------------------------------------------------------------------------------| 
-|`-ti`     | **Terminal Interactive**. Example `docker run -ti ubuntu:latest bash`	                                                          |
-|`--rm`    | Remove a container when it exits. Example `docker run --rm -ti ubuntu sleep 5`                                                   |
-|`-c`      | Run **bash** commands preceding `-c` argument and exit. Example `docker run -ti ubuntu bash -c "echo hello world; ls; echo bye;"`|
-|`-d`      | **Detached Mode**. Start a container and leave it running in the background. Example `docker run -d -ti ubuntu bash`             |
+| Argument |                                                             Description                                                           |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------| 
+|`-ti`     | **Terminal Interactive**. Example `docker run -ti ubuntu:latest bash`	                                                           |
+|`-c`      | Run **bash** commands preceding `-c` argument and exit. Example `docker run -ti ubuntu bash -c "echo hello world; ls; echo bye;"` |
+|`-d`      | **Detached Mode**. Start a container and leave it running in the background. Example `docker run -d -ti ubuntu bash`              |
+|`--name`  | Give a name to the container instead of the system generated name. Example `docker run --name my-ubuntu-container -ti ubuntu bash`|
+|`--rm`    | Remove a container when it exits. Example `docker run --rm -ti ubuntu sleep 5`                                                    |
 
 **NOTE:** To Jump away from a container started in a non-detached mode, use the following key sequence <kbd>ctrl</kbd>+<kbd>p</kbd>, <kbd>ctrl</kbd>+<kbd>q</kbd>
 
