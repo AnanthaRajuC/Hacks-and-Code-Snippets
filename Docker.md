@@ -46,9 +46,10 @@
 |--------------------------------|--------------------------------------------------------------------------|
 |`docker images`                 | take a look at the container images.                                     |
 |`docker images -a`              | shows  every image, including intermediate image layers.                 |
-|`docker images -f dangling=true`| list dangling images														|
+|`docker images -f dangling=true`| list dangling images														                          |
 |`docker image ls`               | take a look at the container images.                                     |
 |`docker ps`                     | list all the running containers.                                         |
+|`docker ps -l`                  | displays the last container to be exited                                 |
 |`docker ps -a`                  | list all the containers, including the ones that have finished executing.|
 
 ## Docker  Container State Change 
