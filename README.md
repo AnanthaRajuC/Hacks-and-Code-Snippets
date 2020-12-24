@@ -3,7 +3,8 @@
 Compilation of commonly used and diversehacks & code snippets
 
 - [Angular](./Angular.md)
-- [Application Version Check](./ApplicationVersion.md)
+- [Application Version Check](./Application-Version-Check.md)
+- [Chocolatey](./Chocolatey.md)
 - [Command Prompt](./CommandPrompt.md)
 - [Database](./Database.md)
 - [Docker](./Docker.md)
