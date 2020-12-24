@@ -52,14 +52,16 @@
 |`docker ps -l`                  | displays the last container to be exited                                 |
 |`docker ps -a`                  | list all the containers, including the ones that have finished executing.|
 
-## Docker  Container State Change 
+## Docker Container State Change 
 
-|                		  Command           |                           Description                             |
+|                		      Command           |                           Description                             |
 |-------------------------------------------|-------------------------------------------------------------------|
-|`docker run [container_name]`      		| run a container.                									|
+|`docker run [container_name]`      		    | run a container.                								                	|
 |`docker run -p 8080:8080 [container_name]`	| Run a container by mapping a port on docker to a port on localhost|
-|`docker stop [container_id]`   			| stop a container              								    |
-|`docker restart [container_name]`  		| restart a container.           								    |
+|`docker stop [container_id]`   			      | stop a container              								                    |
+|`docker commit [container_id]`   			    | Create image from a stopped container              								|
+|`docker tag [image_id] [new_image_name]`   | Tag an image with a human readable name            								|
+|`docker restart [container_name]`  		    | restart a container.           								                    |
 
 ## Docker Management
 
