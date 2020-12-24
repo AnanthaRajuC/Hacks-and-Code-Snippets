@@ -2,11 +2,12 @@
 
 ## Docker Command Arguments
 
-| Argument |                               Description                                   |
-|----------|-----------------------------------------------------------------------------| 
-|`-ti`     | Terminal Interactive. Example `docker run -ti ubuntu:latest bash`	         |
-|`--rm`    | Delete container when it exits. Example `docker run --rm -ti ubuntu sleep 5`|
+| Argument |                                                            Description                                                           |
+|----------|----------------------------------------------------------------------------------------------------------------------------------| 
+|`-ti`     | **Terminal Interactive**. Example `docker run -ti ubuntu:latest bash`	                                                          |
+|`--rm`    | Remove a container when it exits. Example `docker run --rm -ti ubuntu sleep 5`                                                   |
 |`-c`      | Run **bash** commands preceding `-c` argument and exit. Example `docker run -ti ubuntu bash -c "echo hello world; ls; echo bye;"`|
+|`-d`      | **Detached Mode**. Start a container and leave it running in the background. Example `docker run -d -ti ubuntu bash`             |
 
 ## Docker Meta
 
@@ -19,12 +20,12 @@
 
 ## Docker Volumes
 
-|        Command                             |                        Description                        |
-|--------------------------------------------|-----------------------------------------------------------| 
-|`docker volume ls`				             | list volumes                                          	 |
-|`docker volume ls -f dangling=true`		 | list dangling volumes                                     |
-|`docker volume rm [volume_name]`			 | remove volume                                        	 |
-|`docker volume prune`	            		 | remove all dangling volumes                               |
+|        Command                      |     Description               |
+|-------------------------------------|-------------------------------| 
+|`docker volume ls`				            | list volumes                  |
+|`docker volume ls -f dangling=true`	| list dangling volumes         |
+|`docker volume rm [volume_name]`			| remove volume                 |
+|`docker volume prune`	            	| remove all dangling volumes   |
 
 ## Docker Logging
 
