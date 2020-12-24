@@ -72,6 +72,8 @@
 |`docker run [container_name]`      		          | run a container.                								                	|
 |`docker run -p 8080:8080 [container_name]`	      | Run a container by mapping a port on docker to a port on localhost|
 |`docker stop [container_id]`   			            | stop a container              								                    |
+|`docker kill [container_name]`   			          | stop a container              								                    |
+|`docker rm [container_name]`   			            | remove a container              								                    |
 |`docker commit [container_id]`   			          | Create image from a stopped container              								|
 |`docker tag [image_id] [new_image_name]`         | Tag an image with a human readable name            								|
 |`docker commit [container_name] [new_image_name]`| Create image from a stopped container with a human readable name  |
