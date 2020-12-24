@@ -6,6 +6,7 @@
 |----------|-----------------------------------------------------------------------------| 
 |`-ti`     | Terminal Interactive. Example `docker run -ti ubuntu:latest bash`	         |
 |`--rm`    | Delete container when it exits. Example `docker run --rm -ti ubuntu sleep 5`|
+|`-c`      | Run **bash** commands preceding `-c` argument and exit. Example `docker run -ti ubuntu bash -c "echo hello world; ls; echo bye;"`|
 
 ## Docker Meta
 
