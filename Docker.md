@@ -95,16 +95,21 @@
 
 |            Connecting to the MySQL docker image via CLI                |                  Description                   |
 |------------------------------------------------------------------------|------------------------------------------------| 
-|`docker exec mysql-docker mysql -usbat -psbat -e 'show databases;'`	 | connect to MySQL image without interactive CLI.|												
+|`docker exec mysql-docker mysql -usbat -psbat -e 'show databases;'`	   | connect to MySQL image without interactive CLI.|												
 |`docker exec -it mysql-docker mysql -usbat -psbat -e 'show databases;'` | connect to MySQL image without interactive CLI.|													
-|`docker exec -it mysql-docker mysql -usbat -psbat`						 | connect to MySQL image via interactive CLI.	  |													
+|`docker exec -it mysql-docker mysql -usbat -psbat`						           | connect to MySQL image via interactive CLI.	  |													
+
+|            Running multiple versions of MySQL docker images. Examples        |                  Description                   |
+|------------------------------------------------------------------------------|------------------------------------------------| 
+|`docker run --name=mysql_legacy -e MYSQL_ROOT_PASSWORD=mysql007 -d mysql:5.7` |                                                |	
+|`docker run --name=mysql_latest -e MYSQL_ROOT_PASSWORD=mysql007 -d mysql:8.0` |                                                |	
 
 ## Docker Hub
 
 |                      Docker Hub Commands                           |                         Description                               |
 |--------------------------------------------------------------------|-------------------------------------------------------------------| 
-|`docker pull [container_name]`							             | logout a Docker image from Docker Hub                             |
-|`docker logout`							                         | logout of Docker Hub from the local machine.                      |
+|`docker pull [container_name]`							                         | logout a Docker image from Docker Hub                             |
+|`docker logout`							                                       | logout of Docker Hub from the local machine.                      |
 |`docker login --username=YOUR_DOCKERHUB_USERNAME`	                 | login to Docker Hub from your machine.                            |
 |`docker tag <existing-image> <hub-user>/<repo-name>[:<tag>]`        | re-tagging an existing local image					             |
 |`docker commit <existing-container> <hub-user>/<repo-name>[:<tag>]` | commit changes					                                 |
