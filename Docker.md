@@ -83,14 +83,15 @@
 
 ## Docker Management
 
-|                 Command                  |                         								   Description                                                   |
-|------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-|`docker build -t [project name] .`        | Build a Docker Image                                              														 |
-|`docker system prune`					   | Clean up any resources — images, containers, volumes, and networks — that are dangling (not associated with a container)|
-|`docker system prune -a`                  | Remove any stopped containers and all unused images (not just dangling images)                                          |
-|`docker rm [container_id-or-name]`        | Remove a container with a particular container name               														 |
-|`docker rm $(docker ps -a -q)`            | Stop and remove all containers                                    														 |
-|`docker rm -v container_name`			   | Remove a container and its volume                                                                                       |
+|          Command                  |                         								   Description                                                                   |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+|`docker build -t [project name] .` | Build a Docker Image.                                              														                           |
+|`docker system prune`					    | Clean up any resources — images, containers, volumes, and networks — that are dangling (not associated with a container).|
+|`docker system prune -a`           | Remove any stopped containers and all unused images (not just dangling images).                                          |
+|`docker rm [container_id-or-name]` | Remove a container with a particular container name.               														                           |
+|`docker rm $(docker ps -a -q)`     | Stop and remove all containers.                                    														                           |
+|`docker rm -v container_name`		  | Remove a container and its volume.                                                                                       |
+|`docker image rm -f container_name`| Force remove a container a image.                                                                                        |
 
 ## MySQL Docker Container 
 
