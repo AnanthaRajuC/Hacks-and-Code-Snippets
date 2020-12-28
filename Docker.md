@@ -33,25 +33,34 @@
 
 ## Docker Logging
 
-|                                                Command                                            |                                  		Description                                  |
-|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-|`docker logs [container_id]`			                            								| list container logs                                                           	 |
-|`docker logs [container_id] --tail N`                               								| list container logs, **`--tail`** flag will show the last **N** lines of logs 	 |   
-|`docker logs [container_id] --since YYYY-MM-DD`                     								| list container logs since a particular date                                   	 |
-|`docker logs [container_id] --since YYYY-MM-DDTHH:MM:SS.000000000Z` 								| list container logs since a particular timestamp                              	 |
-|`docker logs -f [container_id]`                                                                    | look at the logs of a container                                               	 |
-|`docker inspect [container_id]`                                                                    | examine a container's metadata in Docker                                      	 |
+|                      Command                                      |                                  		Description                               |
+|-------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|`docker logs [container_id]`			                            			| list container logs                                                           |
+|`docker logs [container_id] --tail N`                              | list container logs, **`--tail`** flag will show the last **N** lines of logs |   
+|`docker logs [container_id] --since YYYY-MM-DD`                    | list container logs since a particular date                                   |
+|`docker logs [container_id] --since YYYY-MM-DDTHH:MM:SS.000000000Z`| list container logs since a particular timestamp                              |
+|`docker logs -f [container_id]`                                    | look at the logs of a container                                             	|
+
+## Docker Inspect 
+|                      Command                                      |                                  		Description                               |
+|-------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|`docker inspect [container_id]`                                                                    | examine a container's metadata in Docker      |
 |`docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' [container_id]`| Use --format to inspect specific fields from the returned container's metadata JSON| 
 
 ## Docker Stats
 
-|                             Command                                |                                  Description                                  |
-|--------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|                 Command                                |                                  Description                                  |
+|--------------------------------------------------------|-------------------------------------------------------------------------------|
 |`docker stats`							                             | Show CPU and memory usage of all running containers                 	         |
 |`docker stats [container_name]`						             | Show CPU and memory usage of a particular running container                   |
-|`docker stats [container1_name] [container2_name]`			         | Show CPU and memory usage of container1, container2                           |
-|`docker top [container_name]`			                             | Show running processes in a container                                         |
-|`docker system df`			                                         | Show storage usage                                                            |
+|`docker stats [container1_name] [container2_name]`			 | Show CPU and memory usage of container1, container2                           |
+
+## Docker Queries
+
+|                 Command                                |                                  Description                                  |
+|--------------------------------------------------------|-------------------------------------------------------------------------------|
+|`docker top [container_name]`			                     | Show running processes in a container                                         |
+|`docker system df`			                                 | Show storage usage                                                            |
 
 ## Docker Basic Queries
 
@@ -74,7 +83,6 @@
 |`docker run -p 8080:8080 [container_name]`	      | Run a container by mapping a port on docker to a port on localhost|
 |`docker stop [container_id]`   			            | stop a container              								                    |
 |`docker kill [container_name]`   			          | stop a container              								                    |
-|`docker rm [container_name]`   			            | remove a container              								                    |
 |`docker commit [container_id]`   			          | Create image from a stopped container              								|
 |`docker tag [image_id] [new_image_name]`         | Tag an image with a human readable name            								|
 |`docker commit [container_name] [new_image_name]`| Create image from a stopped container with a human readable name  |
@@ -88,7 +96,7 @@
 |`docker build -t [project name] .` | Build a Docker Image.                                              														                           |
 |`docker system prune`					    | Clean up any resources — images, containers, volumes, and networks — that are dangling (not associated with a container).|
 |`docker system prune -a`           | Remove any stopped containers and all unused images (not just dangling images).                                          |
-|`docker rm [container_id-or-name]` | Remove a container with a particular container name.               														                           |
+|`docker rm [container_id-or-name]` | Remove a container with a particular container name/id.               														                           |
 |`docker rm $(docker ps -a -q)`     | Stop and remove all containers.                                    														                           |
 |`docker rm -v container_name`		  | Remove a container and its volume.                                                                                       |
 |`docker image rm -f container_name`| Force remove a container a image.                                                                                        |
