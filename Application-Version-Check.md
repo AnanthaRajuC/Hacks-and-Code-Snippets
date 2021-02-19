@@ -2,6 +2,7 @@
 
 |     Application  |        Command       |
 |------------------|:---------------------|
+|Angular           |`ng version`          |
 |Chocolatey        |`Chocolatey --version`|
 |Curl              |`curl --version`      |
 |Docker            |`docker version`      |
