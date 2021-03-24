@@ -17,32 +17,43 @@
 
 |        Command                             |                        Description                        |
 |--------------------------------------------|-----------------------------------------------------------| 
-|`docker-machine ip default`				         | check your docker IP default, usually **192.168.99.102**	 |
+|`docker-machine ip default`				 | check your docker IP default, usually **192.168.99.102**	 |
 |`docker-machine ip`                         | Find Docker Toolbox IP address, usually **192.168.99.102**|
 |`docker version`                            | displays the docker version information                   |
 |`docker info`                               | Display system-wide information                           |
+
+## Docker Network
+
+|        Command                       |          Description               |
+|--------------------------------------|------------------------------------| 
+|`docker network create [network_name]`| Create Network                     |
+|`docker network ls`                   | List networks                      |
+|`docker network ls --no-trunc`        | List networks with full network id |
+|`docker network prune`                | Remove all unused networks         |
+|`docker network prune`                | Remove all unused networks         |
+|`docker network rm [network_name]`    | Remove a network                   |
 
 ## Docker Volumes
 
 |        Command                      |     Description               |
 |-------------------------------------|-------------------------------| 
-|`docker volume ls`				            | list volumes                  |
-|`docker volume ls -f dangling=true`	| list dangling volumes         |
-|`docker volume rm [volume_name]`			| remove volume                 |
-|`docker volume prune`	            	| remove all dangling volumes   |
+|`docker volume ls`				      | list volumes                  |
+|`docker volume ls -f dangling=true`  | list dangling volumes         |
+|`docker volume rm [volume_name]`	  | remove volume                 |
+|`docker volume prune`	              | remove all dangling volumes   |
 
 ## Docker Logging
 
-|                      Command                                      |                                  		Description                               |
+|                      Command                                      |                                  	  Description                               |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|`docker logs [container_id]`			                            			| list container logs                                                           |
+|`docker logs [container_id]`			                            | list container logs                                                           |
 |`docker logs [container_id] --tail N`                              | list container logs, **`--tail`** flag will show the last **N** lines of logs |   
 |`docker logs [container_id] --since YYYY-MM-DD`                    | list container logs since a particular date                                   |
 |`docker logs [container_id] --since YYYY-MM-DDTHH:MM:SS.000000000Z`| list container logs since a particular timestamp                              |
 |`docker logs -f [container_id]`                                    | look at the logs of a container                                             	|
 
 ## Docker Inspect 
-|                      Command                                      |                                  		Description                               |
+|                      Command                                      |                                 	  Description                               |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------|
 |`docker inspect [container_id]`                                                                    | examine a container's metadata in Docker      |
 |`docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' [container_id]`| Use --format to inspect specific fields from the returned container's metadata JSON| 
@@ -51,16 +62,16 @@
 
 |                 Command                                |                                  Description                                  |
 |--------------------------------------------------------|-------------------------------------------------------------------------------|
-|`docker stats`							                             | Show CPU and memory usage of all running containers                 	         |
-|`docker stats [container_name]`						             | Show CPU and memory usage of a particular running container                   |
-|`docker stats [container1_name] [container2_name]`			 | Show CPU and memory usage of container1, container2                           |
+|`docker stats`							                             | Show CPU and memory usage of all running containers               |
+|`docker stats [container_name]`						             | Show CPU and memory usage of a particular running container       |
+|`docker stats [container1_name] [container2_name]`			 | Show CPU and memory usage of container1, container2                       |
 
 ## Docker Queries
 
 |                 Command                                |                                  Description                                  |
 |--------------------------------------------------------|-------------------------------------------------------------------------------|
-|`docker top [container_name]`			                     | Show running processes in a container                                         |
-|`docker system df`			                                 | Show storage usage                                                            |
+|`docker top [container_name]`			                     | Show running processes in a container                                     |
+|`docker system df`			                                 | Show storage usage                                                        |
 
 ## Docker Basic Queries
 
@@ -68,7 +79,7 @@
 |--------------------------------|--------------------------------------------------------------------------|
 |`docker images`                 | take a look at the container images.                                     |
 |`docker images -a`              | shows  every image, including intermediate image layers.                 |
-|`docker images -f dangling=true`| list dangling images														                          |
+|`docker images -f dangling=true`| list dangling images													    |
 |`docker image ls`               | take a look at the container images.                                     |
 |`docker attach [container_name]`| connect to a detached container.                                         |
 |`docker ps`                     | list all the running containers.                                         |
@@ -77,17 +88,17 @@
 
 ## Docker Container State Change 
 
-|                		      Command                 |                           Description                             |
+|                		  Command                 |                           Description                             |
 |-------------------------------------------------|-------------------------------------------------------------------|
-|`docker run [container_name]`      		          | run a container.                								                	|
+|`docker run [container_name]`      		      | run a container.                								                	|
 |`docker run -p 8080:8080 [container_name]`	      | Run a container by mapping a port on docker to a port on localhost|
-|`docker stop [container_id]`   			            | stop a container              								                    |
-|`docker kill [container_name]`   			          | stop a container              								                    |
-|`docker commit [container_id]`   			          | Create image from a stopped container              								|
+|`docker stop [container_id]`   			      | stop a container              								                    |
+|`docker kill [container_name]`   			      | stop a container              								                    |
+|`docker commit [container_id]`   			      | Create image from a stopped container              								|
 |`docker tag [image_id] [new_image_name]`         | Tag an image with a human readable name            								|
 |`docker commit [container_name] [new_image_name]`| Create image from a stopped container with a human readable name  |
-|`docker restart [container_name]`  		          | restart a container.           								                    |
-|`docker exec -ti [container_name] [process]`  		| Add a process to a running container. Can't add ports, volumes, and so on. Example: `docker exec -ti nostalgic_northcutt bash` opens a new bash shell|
+|`docker restart [container_name]`  		      | restart a container.           								                    |
+|`docker exec -ti [container_name] [process]`     | Add a process to a running container. Can't add ports, volumes, and so on. Example: `docker exec -ti nostalgic_northcutt bash` opens a new bash shell|
 
 ## Docker Management
 
