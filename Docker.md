@@ -13,11 +13,19 @@
 
 **NOTE:** To Jump away from a container started in a non-detached mode, use the following key sequence <kbd>ctrl</kbd>+<kbd>p</kbd>, <kbd>ctrl</kbd>+<kbd>q</kbd>
 
+## Docker Compose
+
+|        Command                             |                        Description                        |
+|--------------------------------------------|-----------------------------------------------------------| 
+|`docker-compose config`				             | check the build-file for syntax-errors	                   |
+|`docker-compose down`				               | stop the containers, remove them from Docker and remove the connected networks from it.|
+|`docker-compose up`                         | start the containers                                      |
+
 ## Docker Meta
 
 |        Command                             |                        Description                        |
 |--------------------------------------------|-----------------------------------------------------------| 
-|`docker-machine ip default`				 | check your docker IP default, usually **192.168.99.102**	 |
+|`docker-machine ip default`				 | check your docker IP default, usually **192.168.99.102**	         |
 |`docker-machine ip`                         | Find Docker Toolbox IP address, usually **192.168.99.102**|
 |`docker version`                            | displays the docker version information                   |
 |`docker info`                               | Display system-wide information                           |
