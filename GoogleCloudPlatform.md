@@ -1,3 +1,17 @@
+# GCP CLI Commands
+
+|                  Command                                 |                     Description                                                                    |
+|----------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+|`gcloud components update`                                | update all the installed Google Cloud SDK components.                                              |
+|`gcloud info --format="value(installation.sdk_root)"`     |Find out where Google Cloud SDK is installed                                                        |
+|`gcloud auth list`                                        |list the active account name                                                                        |
+|`gcloud config list project`                              |list the project ID                                                                                 |
+|`gcloud config set compute/zone [ZONE-NAME]`              |set your default compute zone                                                                       |
+|`gcloud container clusters create [CLUSTER-NAME]`         |Create a Kubernetes Engine cluster (Kubernetes Engine will provision a few Virtual Machines)        |
+|`gcloud container clusters get-credentials [CLUSTER-NAME]`|to interact with the cluster.After creating your cluster, you need to get authentication credentials|
+|`gcloud container clusters delete [CLUSTER-NAME]`         |delete a cluster                                                                                    |
+|`exit`                                                    |log out of the interactive shell                                                                    |
+
 ##### gcloud auth login - authorize gcloud to access the Cloud Platform with Google user credentials
 #### `gcloud auth login [ACCOUNT]`
 
@@ -5,41 +19,14 @@
 
 `gcloud config set project [PROJECT]`
 
-##### update all the installed Google Cloud SDK components
-#### `gcloud components update`
-
-##### Find out where Google Cloud SDK is installed
-#### `gcloud info --format="value(installation.sdk_root)"`
-
 #### gcloud
 ##### gcloud is the command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell
-
-#### `gcloud auth list`
-##### list the active account name
-
-#### `gcloud config list project`
-##### list the project ID
 
 #### create and switch into a folder named test
 ##### `mkdir test && cd test`
 
-#### set your default compute zone to us-central1-a
-##### `gcloud config set compute/zone [ZONE-NAME]`
-
-#### Create a Kubernetes Engine cluster (Kubernetes Engine will provision a few Virtual Machines)
-##### `gcloud container clusters create [CLUSTER-NAME]`
-
-#### to interact with the cluster.After creating your cluster, you need to get authentication credentials
-##### `gcloud container clusters get-credentials [CLUSTER-NAME]
-
-#### cto delete a cluster
-##### `gcloud container clusters delete [CLUSTER-NAME]`
-
 #### view the running container
 ##### `kubectl get pods`
-
-#### cto delete a cluster
-##### `gcloud container clusters delete [CLUSTER-NAME]`
 
 #### cto delete a cluster
 ##### `kubectl expose deployment [CONTAINER-NAME] --port 80 --type LoadBalancer`
@@ -61,9 +48,6 @@
 
 #### run an interactive shell inside a Pod. This can come in handy when you want to troubleshoot from within a container.
 ##### `kubectl exec [POD-NAME] --stdin --tty -c [POD-NAME] /bin/sh`
-
-#### log out of the interactive shell
-##### `exit`
 
 #### list of endpoints on the monolith service
 ##### `kubectl describe services [SERVICE-NAME] | grep Endpoints`
