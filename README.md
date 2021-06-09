@@ -1,20 +1,32 @@
 # Hacks and Code Snippets
 
-Compilation of commonly used and diversehacks & code snippets
+Compilation of my commonly used and diverse hacks, code snippets
+
+## Operating Systems
+
+- [Windows Command Prompt](./Windows-Command-Prompt.md)
+- [Linux](./Linux.md)
+
+## Cloud Platforms
+
+- [AWS CLI](./AWS-CLI.md)
+- [Google Cloud Platform](./GoogleCloudPlatform.md)
+
+## Code Samples
+
+- [Spring Boot Application - Code Samples](./SpringBootApplication-CodeSamples.md)
+
+## Others
 
 - [Angular](./Angular.md)
-- [AWS CLI](./AWS-CLI.md)
 - [Application Version Check](./Application-Version-Check.md)
 - [Chocolatey](./Chocolatey.md)
-- [Command Prompt](./CommandPrompt.md)
+- [Curl](./Curl.md)
 - [Database](./Database.md)
 - [Docker](./Docker.md)
 - [Git](https://anantharajuc.github.io/Git/)
-- [Google Cloud Platform](./GoogleCloudPlatform.md)
-- [Linux](./Linux.md)
 - [Maven](./Maven.md)
 - [Microsoft Excel](./MicrosoftExcel.md)
 - [OpenSSL](./OpenSSL.md)
 - [Others](./Others.md)
 - [Ruby-and-Jekyll](./Ruby-and-Jekyll.md)
-- [Spring Boot Application - Code Samples](./SpringBootApplication-CodeSamples.md)
