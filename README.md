@@ -3,6 +3,7 @@
 Compilation of commonly used and diversehacks & code snippets
 
 - [Angular](./Angular.md)
+- [AWS CLI](./AWS-CLI.md)
 - [Application Version Check](./Application-Version-Check.md)
 - [Chocolatey](./Chocolatey.md)
 - [Command Prompt](./CommandPrompt.md)

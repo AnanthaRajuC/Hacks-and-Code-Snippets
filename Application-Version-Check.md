@@ -3,6 +3,7 @@
 |     Application  |          Command       |
 |------------------|:-----------------------|
 |Angular           |`ng version`            |
+|AWS CLI           | `aws --version`        |
 |Chocolatey        |`Chocolatey --version`  |
 |Curl              |`curl --version`        |
 |Docker            |`docker version`        |
