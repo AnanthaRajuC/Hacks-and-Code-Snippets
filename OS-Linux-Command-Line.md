@@ -23,7 +23,7 @@
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------| 
 |`ps`                                      | Lists current user's running processes                                                                             |
 |`ps aux`                                  | Lists all running processes                                                                                        |
-|`ps aux | grep $USER`                     | show all running processes, but limit the output to lines containing your username                                 |
+|`ps aux \| grep $USER`                     | show all running processes, but limit the output to lines containing your username                                 |
 
 ## Users
 
@@ -31,7 +31,7 @@
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------| 
 |`who`                                     | Shows the logged-in user                                                                                           |
 |`whoami`                                  | Shows the current user's username                                                                                  |
-|`who | wc -l`                             | Displays the count of users currently logged in.                                                                   |
+|`who \| wc -l`                             | Displays the count of users currently logged in.                                                                   |
 
 ## Others
 
