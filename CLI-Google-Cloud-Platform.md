@@ -1,8 +1,11 @@
 # GCP CLI Commands
 
+#### gcloud
+command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell.
+
 |                  Command                                 |                     Description                                                                    |
 |----------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-|`gcloud components update`                                | update all the installed Google Cloud SDK components.                                              |
+|`gcloud components update`                                |update all the installed Google Cloud SDK components.                                               |
 |`gcloud info --format="value(installation.sdk_root)"`     |Find out where Google Cloud SDK is installed                                                        |
 |`gcloud auth list`                                        |list the active account name                                                                        |
 |`gcloud config list project`                              |list the project ID                                                                                 |
@@ -11,6 +14,11 @@
 |`gcloud container clusters get-credentials [CLUSTER-NAME]`|to interact with the cluster.After creating your cluster, you need to get authentication credentials|
 |`gcloud container clusters delete [CLUSTER-NAME]`         |delete a cluster                                                                                    |
 |`exit`                                                    |log out of the interactive shell                                                                    |
+|`kubectl get pods`                                        |list all pods running in the default namespace                                                      |
+|`kubectl get services`                                    |List services                                                                                       |
+|`kubectl describe pods [POD-NAME]`                        |get more information about the monolith pod                                                         |
+|`kubectl logs [POD-NAME]`                                 |view the logs from a Pod                                                                            |
+|`kubectl logs -f [POD-NAME]`                              |get a stream of Pod logs happening in real-time                                                     |
 
 ##### gcloud auth login - authorize gcloud to access the Cloud Platform with Google user credentials
 #### `gcloud auth login [ACCOUNT]`
@@ -19,32 +27,11 @@
 
 `gcloud config set project [PROJECT]`
 
-#### gcloud
-##### gcloud is the command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell
-
 #### create and switch into a folder named test
 ##### `mkdir test && cd test`
 
-#### view the running container
-##### `kubectl get pods`
-
 #### cto delete a cluster
 ##### `kubectl expose deployment [CONTAINER-NAME] --port 80 --type LoadBalancer`
-
-#### List services
-##### `kubectl get services`
-
-#### list all pods running in the default namespace
-##### `kubectl get pods`
-
-#### get more information about the monolith pod
-##### `kubectl describe pods [POD-NAME]`
-
-#### view the logs from a Pod
-##### `kubectl logs [POD-NAME]`
-
-#### get a stream of Pod logs happening in real-time
-##### `kubectl logs -f [POD-NAME]`
 
 #### run an interactive shell inside a Pod. This can come in handy when you want to troubleshoot from within a container.
 ##### `kubectl exec [POD-NAME] --stdin --tty -c [POD-NAME] /bin/sh`

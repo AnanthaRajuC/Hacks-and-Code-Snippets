@@ -4,13 +4,26 @@ Compilation of my commonly used and diverse hacks, code snippets
 
 ## Operating Systems
 
-- [Windows Command Prompt](./Windows-Command-Prompt.md)
-- [Linux](./Linux.md)
+- [Windows Command Line](./OS-Windows-Command-Line.md)
+- [Linux Command Line](./OS-Linux-Command-Line.md)
 
 ## Cloud Platforms
 
-- [AWS CLI](./AWS-CLI.md)
-- [Google Cloud Platform](./GoogleCloudPlatform.md)
+- [Amazon Web Services CLI](./CLI-Amazon-Web-Services.md)
+- [Google Cloud Platform CLI](./CLI-Google-Cloud-Platform.md)
+
+## Tools
+
+- [Chocolatey](./Chocolatey.md)
+- [Curl](./Curl.md)
+- [Git](https://anantharajuc.github.io/Git/)
+- [Maven](./Maven.md)
+- [Docker](./Docker.md)
+
+## Programming Languages
+
+- [Ruby-and-Jekyll](./Ruby-and-Jekyll.md)
+- [Angular](./Angular.md)
 
 ## Code Samples
 
@@ -18,15 +31,9 @@ Compilation of my commonly used and diverse hacks, code snippets
 
 ## Others
 
-- [Angular](./Angular.md)
 - [Application Version Check](./Application-Version-Check.md)
-- [Chocolatey](./Chocolatey.md)
-- [Curl](./Curl.md)
 - [Database](./Database.md)
-- [Docker](./Docker.md)
-- [Git](https://anantharajuc.github.io/Git/)
-- [Maven](./Maven.md)
 - [Microsoft Excel](./MicrosoftExcel.md)
 - [OpenSSL](./OpenSSL.md)
 - [Others](./Others.md)
-- [Ruby-and-Jekyll](./Ruby-and-Jekyll.md)
+

@@ -22,3 +22,4 @@
 |npm               |`npm -v`                |
 |Python            |`python --version`      |
 |Ruby              |`ruby -v`               |
+|Terraform         |`Terraform -v`          |
