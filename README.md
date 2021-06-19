@@ -12,6 +12,16 @@ Compilation of my commonly used and diverse hacks, code snippets
 - [Amazon Web Services CLI](./CLI-Amazon-Web-Services.md)
 - [Google Cloud Platform CLI](./CLI-Google-Cloud-Platform.md)
 
+## Programming Languages
+
+- [Ruby-and-Jekyll](./Ruby-and-Jekyll.md)
+- [Angular](./Angular.md)
+
+## Database
+
+- [MYSQL](./RDBMS-MYSQL.md)
+- [MongoDB](./NoSQL-MongoDB.md)
+
 ## Tools
 
 - [Chocolatey](./Chocolatey.md)
@@ -20,11 +30,6 @@ Compilation of my commonly used and diverse hacks, code snippets
 - [Maven](./Maven.md)
 - [Docker](./Docker.md)
 
-## Programming Languages
-
-- [Ruby-and-Jekyll](./Ruby-and-Jekyll.md)
-- [Angular](./Angular.md)
-
 ## Code Samples
 
 - [Spring Boot Application - Code Samples](./SpringBootApplication-CodeSamples.md)
@@ -32,7 +37,7 @@ Compilation of my commonly used and diverse hacks, code snippets
 ## Others
 
 - [Application Version Check](./Application-Version-Check.md)
-- [Database](./Database.md)
+
 - [Microsoft Excel](./MicrosoftExcel.md)
 - [OpenSSL](./OpenSSL.md)
 - [Others](./Others.md)
