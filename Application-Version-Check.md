@@ -1,25 +1,53 @@
-# Windows Application Version Check
+# Application Version Check
+
+## Cloud
 
 |     Application  |          Command       |
-|------------------|:-----------------------|
-|Angular           |`ng version`            |
-|AWS CLI           | `aws --version`        |
-|Chocolatey        |`Chocolatey --version`  |
-|Curl              |`curl --version`        |
+|------------------|------------------------|
+|Heroku CLI        |`heroku --version`      |
+|AWS CLI           |`aws --version`         |
+
+## Containers
+
+|     Application  |          Command       |
+|------------------|------------------------|
 |Docker            |`docker version`        |
 |Docker Compose    |`docker-compose version`|
-|g++               |`g++ --version`         |
-|GDB (GNU Debugger)|`g++ --version`         |
-|Git               |`git version`           |
+|Kubectl           |`kubectl version`       |
+
+## Database
+
+|     Application  |          Command       |
+|------------------|------------------------|
+|MongoDB           |`mongo version`         |
+
+## Programming Languages
+
+|     Application  |          Command       |
+|------------------|------------------------|
 |Go                |`go version`            |
 |Java              |`java -version`         |
-|Jekyll            |`jekyll -v`             |
-|JQ                |`jq --version`          |
-|Kubectl           |`kubectl version`       |
-|Maven             |`mvn -version`          |
-|MongoDB           |`mongo version`         |
 |Node.js           |`node -v`               |
-|npm               |`npm -v`                |
 |Python            |`python --version`      |
 |Ruby              |`ruby -v`               |
+
+## Tools & Plugins
+
+|     Application  |          Command       |
+|------------------|------------------------|
+|Chocolatey        |`Chocolatey --version`  |
+|Curl              |`curl --version`        |
+|Git               |`git version`           |
+|JQ                |`jq --version`          |
+|Maven             |`mvn -version`          |
+|npm               |`npm -v`                |
 |Terraform         |`Terraform -v`          |
+
+## Others
+
+|     Application  |          Command       |
+|------------------|------------------------|
+|Angular           |`ng version`            |
+|g++               |`g++ --version`         |
+|GDB (GNU Debugger)|`g++ --version`         |
+|Jekyll            |`jekyll -v`             |

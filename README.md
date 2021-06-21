@@ -2,25 +2,26 @@
 
 Compilation of my commonly used and diverse hacks, code snippets
 
-## Operating Systems
-
-- [Windows Command Line](./OS-Windows-Command-Line.md)
-- [Linux Command Line](./OS-Linux-Command-Line.md)
-
 ## Cloud Platforms
 
 - [Amazon Web Services CLI](./CLI-Amazon-Web-Services.md)
 - [Google Cloud Platform CLI](./CLI-Google-Cloud-Platform.md)
-
-## Programming Languages
-
-- [Ruby-and-Jekyll](./Ruby-and-Jekyll.md)
-- [Angular](./Angular.md)
+- [Heroku CLI](./CLI-Heroku.md)
 
 ## Database
 
 - [MYSQL](./RDBMS-MYSQL.md)
 - [MongoDB](./NoSQL-MongoDB.md)
+
+## Operating Systems
+
+- [Windows Command Line](./OS-Windows-Command-Line.md)
+- [Linux Command Line](./OS-Linux-Command-Line.md)
+
+## Programming Languages
+
+- [Ruby-and-Jekyll](./Ruby-and-Jekyll.md)
+- [Angular](./Angular.md)
 
 ## Tools
 
@@ -37,7 +38,6 @@ Compilation of my commonly used and diverse hacks, code snippets
 ## Others
 
 - [Application Version Check](./Application-Version-Check.md)
-
 - [Microsoft Excel](./MicrosoftExcel.md)
 - [OpenSSL](./OpenSSL.md)
 - [Others](./Others.md)
