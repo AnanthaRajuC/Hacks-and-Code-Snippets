@@ -4,32 +4,32 @@ Compilation of my commonly used and diverse hacks, code snippets
 
 ## Cloud Platforms
 
-- [Amazon Web Services CLI](./CLI-Amazon-Web-Services.md)
-- [Google Cloud Platform CLI](./CLI-Google-Cloud-Platform.md)
-- [Heroku CLI](./CLI-Heroku.md)
+- [Amazon Web Services CLI](./cloud/CLI-Amazon-Web-Services.md)
+- [Google Cloud Platform CLI](./cloud/CLI-Google-Cloud-Platform.md)
+- [Heroku CLI](./cloud/CLI-Heroku.md)
 
 ## Database
 
-- [MYSQL](./RDBMS-MYSQL.md)
-- [MongoDB](./NoSQL-MongoDB.md)
+- [MYSQL](./database/RDBMS-MYSQL.md)
+- [MongoDB](./database/NoSQL-MongoDB.md)
 
 ## Operating Systems
 
-- [Windows Command Line](./OS-Windows-Command-Line.md)
-- [Linux Command Line](./OS-Linux-Command-Line.md)
+- [Windows Command Line](./operating-system/OS-Windows-Command-Line.md)
+- [Linux Command Line](./operating-system/OS-Linux-Command-Line.md)
 
 ## Programming Languages
 
-- [Ruby-and-Jekyll](./Ruby-and-Jekyll.md)
-- [Angular](./Angular.md)
+- [Ruby-and-Jekyll](./programming/Ruby-and-Jekyll.md)
+- [Angular](./programming/Angular.md)
 
 ## Tools
 
-- [Chocolatey](./Chocolatey.md)
-- [Curl](./Curl.md)
+- [Chocolatey](./tools/Chocolatey.md)
+- [Curl](./tools/Curl.md)
 - [Git](https://anantharajuc.github.io/Git/)
-- [Maven](./Maven.md)
-- [Docker](./Docker.md)
+- [Maven](./tools/Maven.md)
+- [Docker](./tools/Docker.md)
 
 ## Code Samples
 
