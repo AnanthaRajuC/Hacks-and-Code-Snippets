@@ -6,6 +6,7 @@
 |------------------|------------------------|
 |Heroku CLI        |`heroku --version`      |
 |AWS CLI           |`aws --version`         |
+|GCP CLI           |`gcloud version`        |
 
 ## Containers
 
@@ -17,9 +18,11 @@
 
 ## Database
 
-|     Application  |          Command       |
-|------------------|------------------------|
-|MongoDB           |`mongo version`         |
+|     Application   |          Command      |
+|-------------------|-----------------------|
+|MongoDB            |`mongo version`        |
+|PostgreSQL (Server)|`postgres -V`          |
+|psql -V (client)   |`psql -V`              |
 
 ## Programming Languages
 

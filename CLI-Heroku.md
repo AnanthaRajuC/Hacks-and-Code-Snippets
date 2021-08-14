@@ -1,4 +1,4 @@
-# AWS CLI Commands
+# Heroku CLI Commands
 
 |   Command                       |                     Description                                                |
 |---------------------------------|--------------------------------------------------------------------------------|
@@ -9,4 +9,3 @@
 |`heroku git:remote -a [APP_NAME]`| Add Heroku’s remote repository to the project.                                 |
 |`git push heroku main`           | Deploy project on Heroku by pushing the project to Heroku’s remote repository. |
 
----

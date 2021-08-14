@@ -8,8 +8,6 @@
 |`git clone /path/to/repository`              | Create a working copy of a local repository.                       |
 |`git clone username@host:/path/to/repository`| Create a working copy of a remote repository.                      |
 
----
-
 ## Local workflow
 
 |               Command                       |                     Description                                    |
@@ -18,15 +16,11 @@
 |`git add *`                                  | Adds all changed files to staging area (Index).                    |
 |`git commit -m "Commit message"`             | commit the changed files in staging area to HEAD                   |
 
----
-
 ## Pushing Changes
 
 |         Command         |                     Description                                                                                       |
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------|
 |`git push origin master` | Push the changes to your remote repository (Change **master** to whatever **branch** you want to push your changes to)|
-
----
 
 ## Remote
 
@@ -34,8 +28,6 @@
 |-------------------------|----------------------------------------------------|
 |`git remote show origin` | Find the URL of the remote repository.             |
 |`git remote -v`          | List all currently configured remote repositories. |
-
----
 
 ## Git Log
 
