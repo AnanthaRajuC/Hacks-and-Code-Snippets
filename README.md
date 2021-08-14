@@ -10,8 +10,8 @@ Compilation of my commonly used and diverse hacks, code snippets
 
 ## Database
 
-- [MYSQL](./database/RDBMS-MYSQL.md)
-- [MongoDB](./database/NoSQL-MongoDB.md)
+- [MYSQL](./database/RDBMS-MYSQL.sql)
+- [MongoDB](./database/NoSQL-MongoDB.MD)
 
 ## Operating Systems
 
@@ -33,7 +33,7 @@ Compilation of my commonly used and diverse hacks, code snippets
 
 ## Code Samples
 
-- [Spring Boot Application - Code Samples](./SpringBootApplication-CodeSamples.md)
+- [Spring Boot Application - Code Samples](./SpringBootApplication-CodeSample.md)
 
 ## Others
 
