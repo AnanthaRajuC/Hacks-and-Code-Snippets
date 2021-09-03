@@ -30,6 +30,7 @@ Compilation of my commonly used and diverse hacks, code snippets
 - [Git](https://anantharajuc.github.io/Git/)
 - [Maven](./tools/Maven.md)
 - [Docker](./tools/Docker.md)
+- [Kafka](./tools/Kafka.md)
 
 ## Code Samples
 
