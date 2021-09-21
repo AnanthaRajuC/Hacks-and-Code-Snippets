@@ -10,3 +10,9 @@
 |`aws help`                                  | view help documentation                             |
 
 ---
+
+
+AWS File's3
+
+- `C:\Users\YOUR_USERNAME\.aws\config`  
+- `C:\Users\YOUR_USERNAME\.aws\credentials`  
