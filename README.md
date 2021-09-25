@@ -22,6 +22,7 @@ Compilation of my commonly used and diverse hacks, code snippets
 
 - [Ruby-and-Jekyll](./programming/Ruby-and-Jekyll.md)
 - [Angular](./programming/Angular.md)
+- [Java](./programming/Java.md)
 
 ## Tools
 
