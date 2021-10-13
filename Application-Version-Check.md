@@ -14,6 +14,7 @@
 |------------------|------------------------|
 |Docker            |`docker version`        |
 |Docker Compose    |`docker-compose version`|
+|minikube          |`minikube update-check` |
 |Kubectl           |`kubectl version`       |
 
 ## Database
@@ -45,6 +46,7 @@
 |Maven             |`mvn -version`          |
 |npm               |`npm -v`                |
 |Terraform         |`Terraform -v`          |
+|ActiveMQ          |`activemq --version`    |
 
 ## Others
 
