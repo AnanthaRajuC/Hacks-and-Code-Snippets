@@ -32,6 +32,7 @@ Compilation of my commonly used and diverse hacks, code snippets
 - [Maven](./tools/Maven.md)
 - [Docker](./tools/Docker.md)
 - [Kafka](./tools/Kafka.md)
+- [Kubernetes](./tools/Kubernetes.md)
 
 ## Code Samples
 
