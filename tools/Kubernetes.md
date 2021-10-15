@@ -13,6 +13,15 @@
 |`minikube addons enable <addon-name>`         | Enable Minikube addon                            |
 |`minikube dashboard`                          | Enable and Access Kubernetes dashboard           |
 
+In case you want to start the minikube with higher resource like 8 GB RM and 4 CPU then execute following commands one after the another.
+
+~~~
+$ minikube config set cpus 4
+$ minikube config set memory 8192
+$ minikube delete
+$ minikube start
+~~~
+
 ## kubectl
 
 |     Command                       |      Description       |
