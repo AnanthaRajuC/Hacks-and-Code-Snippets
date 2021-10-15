@@ -10,12 +10,14 @@
 
 ## Containers
 
-|     Application  |          Command       |
-|------------------|------------------------|
-|Docker            |`docker version`        |
-|Docker Compose    |`docker-compose version`|
-|minikube          |`minikube update-check` |
-|Kubectl           |`kubectl version`       |
+|     Application  |          Command        |
+|------------------|-------------------------|
+|Docker            |`docker version`         |
+|Docker Compose    |`docker-compose version` |
+|minikube          |`minikube update-check`  |
+|minikube          |`minikube version`       |
+|Kubectl           |`kubectl version -o yaml`|
+|Kubectl           |`kubectl version`        |
 
 ## Database
 
