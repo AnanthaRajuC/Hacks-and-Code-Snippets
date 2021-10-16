@@ -65,6 +65,7 @@
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------|
 |`docker inspect [container_id]`                                                                    | examine a container's metadata in Docker      |
 |`docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' [container_id]`| Use --format to inspect specific fields from the returned container's metadata JSON| 
+|`docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id` ||
 
 ## Docker Stats
 
