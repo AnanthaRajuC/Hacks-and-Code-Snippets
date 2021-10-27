@@ -4,7 +4,7 @@
 
 | Command                                                        |      Description                                                                         |
 |----------------------------------------------------------------|------------------------------------------------------------------------------------------|
-|``jcmd                                                          |When jcmd is invoked without any arguments, it prints a list of all running Java processes|
+|`jcmd`                                                          |When jcmd is invoked without any arguments, it prints a list of all running Java processes|
 |`jps -lv`                                                       |jps is a useful tool for viewing information about running java processes.                |
 |`jps -v`                                                        |                                                                                          |
 |`Taskkill /PID PROCESS_ID_OF_RUNNING_APP /F`                    |                                                                                          |

@@ -33,6 +33,8 @@
 |------------------|------------------------|
 |Go                |`go version`            |
 |Java              |`java -version`         |
+|Java              |`javac -version`        |
+|jshell            |`jshell -version`       |
 |Node.js           |`node -v`               |
 |Python            |`python --version`      |
 |Ruby              |`ruby -v`               |
