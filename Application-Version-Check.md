@@ -38,6 +38,7 @@
 |Node.js           |`node -v`               |
 |Python            |`python --version`      |
 |Ruby              |`ruby -v`               |
+|sbt               |`sbt --version`         |
 
 ## Tools & Plugins
 
