@@ -6,7 +6,7 @@
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 |`kubectl cluster-info`                                                     |kubernetes Cluster Info                                                                                             |
 |`kubectl describe pods [POD-NAME]`                                         |get more information about the monolith pod                                                                         |
-|`kubectl describe services [SERVICE-NAME] | grep Endpoints`                |list of endpoints on the monolith service																		     |
+|`kubectl describe services [SERVICE-NAME] \| grep Endpoints`               |list of endpoints on the monolith service																		     |
 
 ## get
 
