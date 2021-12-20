@@ -36,7 +36,7 @@ command-line tool for Google Cloud Platform. It comes pre-installed on Cloud She
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 |`gcloud container clusters create [CLUSTER-NAME]`                                           |Create a Kubernetes Engine cluster (Kubernetes Engine will provision a few Virtual Machines)        |
 |`gcloud container clusters create [CLUSTER-NAME] --num-nodes 2 --machine-type n1-standard-2`|Create a kubernetes cluster with parameters (number of nodes, machine type).                        |
-|`gcloud container clusters get-credentials [CLUSTER-NAME]`                                  |to interact with the cluster.After creating your cluster, you need to get authentication credentials|
+|`gcloud container clusters get-credentials [CLUSTER-NAME] --zone [ZONE_NAME]`               |to interact with the cluster.After creating your cluster, you need to get authentication credentials|
 |`gcloud container clusters delete [CLUSTER-NAME]`                                           |delete a cluster                                                                                    |
 
 #### gsutil
