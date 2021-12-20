@@ -30,6 +30,13 @@ command-line tool for Google Cloud Platform. It comes pre-installed on Cloud She
 |`gcloud compute instances create second-vm --machine-type "e2-standard-2" --image-project "debian-cloud" --image-family "debian-9" --subnet "default" --zone "us-central1-c"`|Create a VM|
 |`gcloud iam service-accounts create test-service-account2 --display-name "test-service-account2"`|create a new service account|
 
+#### Storage
+
+|                  Command                                                |               Description               | 
+|-------------------------------------------------------------------------|-----------------------------------------|
+|`gcloud compute disks create --size=100GB --zone=us-central1-a demo-disk`| Create a compute engine persistent disk.|
+
+
 #### Kubernetes Engine
 
 |                  Command                                                                   |                     Description                                                                    |

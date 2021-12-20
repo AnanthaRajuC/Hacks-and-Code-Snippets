@@ -28,6 +28,7 @@
 |`kubectl get services`              		|List services public IP address               			              |
 |`kubectl get replicasets`                  |View replicas                                                        |
 |`kubectl get deployments`                  |View replica info                                                    |
+|`kubectl get persistentvolumeclaim`        |View Persistent Volume Claims                                        |
 |`kubectl get namespace`             		|                                             			              |
 |`kubectl get pods --all-namespaces`     	|                                            			              |
 |`kubectl get nodes -o=wide`             	|                                             			              |
