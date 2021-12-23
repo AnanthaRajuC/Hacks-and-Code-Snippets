@@ -22,7 +22,10 @@
 |                  Command           		|                     Description              			              |
 |-------------------------------------------|---------------------------------------------------------------------|
 |`kubectl get nodes`                 		|Kubernetes node status                        			              |
+|`kubectl get nodes -o=wide`             	|                                             			              |
 |`kubectl get pods -o=yaml`                 |list all pods running in the default namespace, output in YAML format|
+|`kubectl get pods --all-namespaces`        |list all pods running in all namespaces                              |
+|`kubectl get po -A`                        |list all pods running in all namespaces                              |
 |`kubectl get pod my-test-app`              |list all pods running in *my-test-app*                               |
 |`kubectl get all`                   		|See what's in the cluster                     			              |
 |`kubectl get services`              		|List services public IP address               			              |
@@ -31,8 +34,7 @@
 |`kubectl get persistentvolumeclaim`        |View Persistent Volume Claims                                        |
 |`kubectl get events`             		    |View Cluster events                                                  |
 |`kubectl get namespace`             		|                                             			              |
-|`kubectl get pods --all-namespaces`     	|                                            			              |
-|`kubectl get nodes -o=wide`             	|                                             			              |
+|`kubectl get pod,svc -n kube-system`       |View the Pod and Service of kube-system namespace                    |
 
 ## scaling
 
@@ -57,7 +59,6 @@
 |`kubectl describe deployment [DEPLOYMENT_NAME]`                                   |get detailed info about deployment                           |
 |`kubectl scale deployment [DEPLOYMENT_NAME] -replicas=n`                          |scale deployment manually. **n** is number of replicas. Ex: 5|    
 |`kubectl autoscale deployment [DEPLOYMENT_NAME] --min=5 --max=15 --cpu-percent=75`|autoscale deployment manually                                |
-|`kubectl delete deployment [DEPLOYMENT_NAME]`                                     |delete deployment                                            |
 
 ## Rollout
 
@@ -69,6 +70,13 @@
 |`kubectl rollout pause deployment [DEPLOYMENT_NAME]`                | pause deployment                                            |
 |`kubectl rollout resume deployment [DEPLOYMENT_NAME]`               | resume deployment                                           |
 |`kubectl rollout status deployment`                                 | monitor rollout status                                      |                             
+
+## Cleanup
+
+|                  Command                                    |                     Description                             |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+|`kubectl delete deployment [DEPLOYMENT_NAME]`                |delete deployment                                            |
+|`kubectl delete service [SERVICE_NAME]`                      |delete service                                               |
 
 ## others
 
