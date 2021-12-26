@@ -27,6 +27,7 @@
 |`minikube addons disable <addon-name>`        | Disable Minikube addon                                             |
 |`minikube dashboard`                          | Access the Kubernetes dashboard running within the minikube cluster|
 |`minikube dashboard --url`                    | View the dashboard URL.                                            |
+|`minikube ip`                                 | View the ip of minikube.                                           |
 
 ## Fix
 

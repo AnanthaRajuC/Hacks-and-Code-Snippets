@@ -11,11 +11,14 @@
 
 ## info
 
-|                  Command                                    |                     Description             	 |
-|-------------------------------------------------------------|--------------------------------------------------|
-|`kubectl api-resources`                                      |                                                  |
-|`kubectl cluster-info`                                       |kubernetes Cluster Info                       	 |
-|`kubectl config view`                                        |displays config info about kubectl command itself |
+|  Command                                        |                     Description                   |
+|-------------------------------------------------|---------------------------------------------------|
+|`kubectl api-resources`                          |                                                   |
+|`kubectl cluster-info`                           |kubernetes Cluster Info                       	  |
+|`kubectl config view`                            |displays config info about kubectl command itself  |
+|`kubectl get all`                                |displays config info about kubectl command itself  |
+|`kubectl get po --show-labels`                   |get all pods and their labels                      |
+|`kubectl get po --show-labels -l {name}={value}` |get all pods matching the specified name:value pair|
 
 ---  
 
@@ -121,10 +124,12 @@
 
 ## Cleanup
 
-|                  Command                                    |                     Description                             |
-|-------------------------------------------------------------|-------------------------------------------------------------|
-|`kubectl delete deployment [DEPLOYMENT_NAME]`                |delete deployment                                            |
-|`kubectl delete service [SERVICE_NAME]`                      |delete service                                               |
+|                  Command                           |                     Description                             |
+|----------------------------------------------------|-------------------------------------------------------------|
+|`kubectl delete deployment [DEPLOYMENT_NAME]`       |delete deployment                                            |
+|`kubectl delete service [SERVICE_NAME]`             |delete service                                               |
+|`kubectl delete po [POD_NAME]`                      |delete the named pod. Can also delete svc, rs, deploy        |
+|`kubectl delete po --all`                           |delete all pods (also svc, rs, deploy)                       |
 
 --- 
 
@@ -133,6 +138,7 @@
 |                  Command                                                  |                     Description                                                                                    |
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 |`kubectl exec [POD-NAME] --stdin --tty -c [POD-NAME] /bin/sh`              |run an interactive shell inside a Pod. This can come in handy when you want to troubleshoot from within a container.|
+|`kubectl exec –it [POD-NAME] [Command]`                                    |execute the specified command in the pod’s container.                                                               |
 |`kubectl expose deployments [CONTAINER-NAME] --port 80 --type LoadBalancer`|Create a Service object that exposes the deployment                                                                 |
 |`kubectl run [CONTAINER-NAME] --image=[IMAGE-NAME:VERSION]`                |Run a container in a pod in kubernetes                                                                              |
 
