@@ -9,7 +9,8 @@
 |`minikube start --kubernetes-version v1.15.12`|https://github.com/kubernetes/minikube/issues/9792         |
 |`minikube pause`                              | Pause Kubernetes without impacting deployed applications  |
 |`minikube unpause`                            | Unpause a paused instance                                 |
-|`minikube stop`                               | Stop Minikube VM i.e., Halt the cluster                      |
+|`minikube stop`                               | Stop Minikube VM i.e., Halt the cluster                   |
+|`minikube image ls`                           | List images                                               |
 
 ## Cleanup
 
@@ -35,9 +36,18 @@
 |----------------------------------------------|--------------------------------------------------------------------|
 |`minikube update-context`                     | Fix kubectl context.                                               |
 
+## Issues
+
+**Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock**  
+
+Solution: **sudo chmod 777 /var/run/docker.sock**
+
+---
+
 In case you want to start the minikube with higher resource like 8 GB RM and 4 CPU then execute following commands one after the another.
 
 ~~~
 $ minikube config set cpus 4
 $ minikube config set memory 8192
 ~~~
+

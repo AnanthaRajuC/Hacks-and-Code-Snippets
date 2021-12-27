@@ -16,6 +16,8 @@
 |`mkdir [DIRECTORY_NAME]`                  | Creates a new directory with the given **DIRECTORY_NAME**                                                          |
 |`rmdir [DIRECTORY_NAME]`                  | Removes the directory with the given **DIRECTORY_NAME**                                                            |
 |`rm [FILE_NAME]`                          | Removes the file with the given **FILE_NAME**                                                                      |
+|`lsblk -f`                                | displays block devices, when used with the -f option, it prints file system type on partitions as well             |
+|`nano [FILE_NAME.FILE_FORMAT]`            | Creates a new file with the given **FILE_NAME** and **FILE_FORMAT** in nano text editor.                           |
 
 ## Processes
 

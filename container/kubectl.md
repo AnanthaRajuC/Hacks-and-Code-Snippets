@@ -33,15 +33,17 @@
 
 ### Pods
 
-|                  Command           		|                     Description              			              |
-|-------------------------------------------|---------------------------------------------------------------------|
-|`kubectl describe pod`                     |get more information about the pods           	                      |
-|`kubectl describe pod [POD-NAME]`          |get more information about the monolith pod   	                      |
-|`kubectl get pods -o=yaml`                 |list all pods running in the default namespace, output in YAML format|
-|`kubectl get pods -o=wide`                 |list all pods running in the default namespace with additional info. |
-|`kubectl get pods --all-namespaces`        |list all pods running in all namespaces                              |
-|`kubectl get po -A`                        |list all pods running in all namespaces                              |
-|`kubectl get pod my-test-app`              |list all pods running in *my-test-app*                               |
+|                  Command           		              |                     Description              			              |
+|---------------------------------------------------------|-----------------------------------------------------------------------|
+|`kubectl describe pod`                                   |get more information about the pods           	                      |
+|`kubectl describe pod [POD-NAME]`                        |get more information about the monolith pod   	                      |
+|`kubectl get pods -o=yaml`                               |list all pods running in the default namespace, output in YAML format  |
+|`kubectl get pods -o=wide`                               |list all pods running in the default namespace with additional info.   |
+|`kubectl get pods --show-labels`                         |list all pods running in the default namespace with label details.     |
+|`kubectl get pods --show-labels -l [LABEL]=[LABEL-VALUE]`|list all pods running in the default namespace with specific labels.   | 
+|`kubectl get pods --all-namespaces`                      |list all pods running in all namespaces                                |
+|`kubectl get po -A`                                      |list all pods running in all namespaces                                |
+|`kubectl get pod my-test-app`                            |list all pods running in *my-test-app*                                 |
 
 ### Pod Logs
 
@@ -137,8 +139,10 @@
 
 |                  Command                                                  |                     Description                                                                                    |
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-|`kubectl exec [POD-NAME] --stdin --tty -c [POD-NAME] /bin/sh`              |run an interactive shell inside a Pod. This can come in handy when you want to troubleshoot from within a container.|
-|`kubectl exec –it [POD-NAME] [Command]`                                    |execute the specified command in the pod’s container.                                                               |
+|`kubectl exec [POD-NAME] -- [COMMAND]`                                     |Run a command in a pod                                                                                              |
+|`kubectl exec [POD-NAME] --stdin --tty -c [POD-NAME] /bin/sh`              |Run an interactive shell inside a Pod. This can come in handy when you want to troubleshoot from within a container.|
+|`kubectl –it exec [POD-NAME] -- [COMMAND]`                                 |Execute the specified command in the pod’s container.                                                               |
+|`kubectl –it exec [POD-NAME] -- sh`                                        |Get a shell into the container with interactive tele-type emulation.                                                |
 |`kubectl expose deployments [CONTAINER-NAME] --port 80 --type LoadBalancer`|Create a Service object that exposes the deployment                                                                 |
 |`kubectl run [CONTAINER-NAME] --image=[IMAGE-NAME:VERSION]`                |Run a container in a pod in kubernetes                                                                              |
 
