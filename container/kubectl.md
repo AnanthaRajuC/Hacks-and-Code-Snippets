@@ -73,17 +73,26 @@
 |`kubectl describe services [SERVICE-NAME] \| grep Endpoints` |list of endpoints on the monolith service                       |
 |`kubectl get services`              		                  |List services public IP address                                 |
 
+### Namespaces
+
+|                  Command           		     |                     Description              			           |
+|------------------------------------------------|---------------------------------------------------------------------|
+|`kubectl get namespaces`             		     |View the namespaces in a system                                      |
+|`kubectl get ns`             		             |View the namespaces in a system                                      |
+|`kubectl get namespaces [NAMESPACE-NAME]`       |View the namespaces details                                          |
+|`kubectl get namespaces --show-labels`          |View the namespaces details with labels                              |
+|`kubectl describe namespaces [NAMESPACE-NAME]`  |get detailed information about a namespaces                          |
+|`kubectl create namespace [NAMESPACE-NAME]`     |create a namespace                                                   |
+
 ### Various
 
-|                  Command           		|                     Description              			              |
-|-------------------------------------------|---------------------------------------------------------------------|
-|`kubectl get all`                   		|See what's in the cluster                     			              |
-|`kubectl get replicasets`                  |View replicas                                                        |
-|`kubectl get persistentvolumeclaim`        |View Persistent Volume Claims                                        |
-|`kubectl get events`             		    |View Cluster events                                                  |
-|`kubectl get namespace`             		|View the namespaces in a system                                      |
-|`kubectl get ns`             		        |View the namespaces in a system                                      |
-|`kubectl get pod,svc -n kube-system`       |View the Pod and Service of kube-system namespace                    |
+|                  Command           		     |                     Description              			           |
+|------------------------------------------------|---------------------------------------------------------------------|
+|`kubectl get all`                   		     |See what's in the cluster                     			           |
+|`kubectl get replicasets`                       |View replicas                                                        |
+|`kubectl get persistentvolumeclaim`             |View Persistent Volume Claims                                        |
+|`kubectl get events`             		         |View Cluster events                                                  |
+|`kubectl get pod,svc -n kube-system`            |View the Pod and Service of kube-system namespace                    |
 
 ---  
 
@@ -140,6 +149,7 @@
 |`kubectl delete po --all`                           |delete all pods (also svc, rs, deploy)                                                       |
 |`kubectl delete -f .`                               |delete all resources based on the files present in the folder where this command is executed.|
 |`kubectl delete node [NODE_NAME]`                   |delete the specified node.                                                                   |
+|`kubectl delete namespaces [NAMEPACE_NAME]`         |delete a namespace. This deletes everything under the namespace                              |
 
 --- 
 
