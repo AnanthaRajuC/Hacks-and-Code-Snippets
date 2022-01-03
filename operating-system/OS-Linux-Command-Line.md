@@ -25,7 +25,7 @@
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------| 
 |`ps`                                      | Lists current user's running processes                                                                             |
 |`ps aux`                                  | Lists all running processes                                                                                        |
-|`ps aux \| grep $USER`                     | show all running processes, but limit the output to lines containing your username                                 |
+|`ps aux \| grep $USER`                    | show all running processes, but limit the output to lines containing your username                                 |
 
 ## Users
 
@@ -44,7 +44,8 @@
 |`cal`                                     | Shows calendar view of the current month                                                                           |
 |`lsb_release -a`                          | Check the Ubuntu version                                                                                           |
 |`reboot`                                  | Restart/Reboot the computer                                                                                        |
-|`uname -a`                                | Prints system information like kernel release date, version, processor type, etc|
+|`sudo poweroff`                           | shut down the system                                                                                               |
+|`uname -a`                                | Prints system information like kernel release date, version, processor type, etc                                   |
 
 ## Update
 

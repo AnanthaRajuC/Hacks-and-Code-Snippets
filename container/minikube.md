@@ -10,6 +10,8 @@
 |`minikube pause`                              | Pause Kubernetes without impacting deployed applications  |
 |`minikube unpause`                            | Unpause a paused instance                                 |
 |`minikube stop`                               | Stop Minikube VM i.e., Halt the cluster                   |
+|`minikube ssh`                                | Login into the Minikube VM                                |
+|`minikube ip`                                 | View the ip of minikube.                                  |
 |`minikube image ls`                           | List images                                               |
 
 ## Cleanup
@@ -28,7 +30,6 @@
 |`minikube addons disable <addon-name>`        | Disable Minikube addon                                             |
 |`minikube dashboard`                          | Access the Kubernetes dashboard running within the minikube cluster|
 |`minikube dashboard --url`                    | View the dashboard URL.                                            |
-|`minikube ip`                                 | View the ip of minikube.                                           |
 
 ## Fix
 
