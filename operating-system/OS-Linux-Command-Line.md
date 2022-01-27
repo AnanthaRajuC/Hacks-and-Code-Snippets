@@ -46,6 +46,9 @@
 |`reboot`                                  | Restart/Reboot the computer                                                                                        |
 |`sudo poweroff`                           | shut down the system                                                                                               |
 |`uname -a`                                | Prints system information like kernel release date, version, processor type, etc                                   |
+|`uname -sr`                               | returns system information                                                                                         |
+|`cat /etc/lsb-release`                    | prints distro information                                                                                          |
+|`whereis grub`                            | points to the location of grub                                                                                     |
 
 ## Update
 
