@@ -19,6 +19,13 @@
 |`lsblk -f`                                | displays block devices, when used with the -f option, it prints file system type on partitions as well             |
 |`nano [FILE_NAME.FILE_FORMAT]`            | Creates a new file with the given **FILE_NAME** and **FILE_FORMAT** in nano text editor.                           |
 
+## Various
+
+|                          Command         |                         Description                                                                                |
+|------------------------------------------|--------------------------------------------------------------------------------------------------------------------| 
+|`printenv` or `env`                       | List all the environment variables                                                                                 |
+
+
 ## Processes
 
 |                          Command         |                         Description                                                                                |
