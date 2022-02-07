@@ -24,6 +24,8 @@
 |                          Command         |                         Description                                                                                |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------| 
 |`printenv` or `env`                       | List all the environment variables                                                                                 |
+|`cat /proc/cpuinfo`                       | Display CPU info                                                                                                   |
+|`find the number of physical CPU cores`   | find the number of physical CPU cores                                                                              |
 
 
 ## Processes
