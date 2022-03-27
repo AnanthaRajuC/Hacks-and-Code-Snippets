@@ -1,5 +1,15 @@
 # Linux Commands
 
+## Update
+
+|       Command         |                         Description                                                                                                                                                      |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
+|`apt update`           | Fetches only the information on latest packages that can be upgraded                                                                                                                     |
+|`apt list –upgradable` | Display the packages that have updates available and therefore can be upgraded on the system.                                                                                            |
+|`apt upgrade`          | The actual command that does the upgrade of the packages in the system. This command can install new packages if the dependencies require it, but it will never remove packages.         |
+|`apt full-upgrade`     | In addition to upgrading new packages and installing new packages as required, it also removes existing installed packages if it determines that the dependencies are no longer required.|
+|`apt autoremove`       | Removes unused packages which are no longer needed by the dependent packages. This can be executed after `apt upgrade`                                                                   |
+
 ## Files and Directories
 
 |                          Command         |                         Description                                                                                |
@@ -42,7 +52,7 @@
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------| 
 |`who`                                     | Shows the logged-in user                                                                                           |
 |`whoami`                                  | Shows the current user's username                                                                                  |
-|`who \| wc -l`                             | Displays the count of users currently logged in.                                                                   |
+|`who \| wc -l`                            | Displays the count of users currently logged in.                                                                   |
 
 ## Others
 
@@ -58,16 +68,9 @@
 |`uname -sr`                               | returns system information                                                                                         |
 |`cat /etc/lsb-release`                    | prints distro information                                                                                          |
 |`whereis grub`                            | points to the location of grub                                                                                     |
-
-## Update
-
-|       Command         |                         Description                                                                                                                                                      |
-|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
-|`apt update`           | Fetches only the information on latest packages that can be upgraded                                                                                                                     |
-|`apt list –upgradable` | Display the packages that have updates available and therefore can be upgraded on the system.                                                                                            |
-|`apt upgrade`          | The actual command that does the upgrade of the packages in the system. This command can install new packages if the dependencies require it, but it will never remove packages.         |
-|`apt full-upgrade`     | In addition to upgrading new packages and installing new packages as required, it also removes existing installed packages if it determines that the dependencies are no longer required.|
-|`apt autoremove`       | Removes unused packages which are no longer needed by the dependent packages. This can be executed after `apt upgrade`                                                                   |
+|`uname -m`                                |                                                                                                                    |
+|`dpkg --print-architecture`               |                                                                                                                    |
+|`hostnamectl`                             |                                                                                                                    |
 
 
 

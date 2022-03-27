@@ -1,6 +1,4 @@
-#### Find the WiFi Password on Windows
-
-##### netsh wlan show profile name=YOUR_WIRELESS_SSID key=clear
+### Java
 
 | Command                                                        |      Description                                                                         |
 |----------------------------------------------------------------|------------------------------------------------------------------------------------------|
@@ -16,16 +14,6 @@
 
 ---
 
-`"{\"from\":\"you\",\"to\":\"me\",\"amount\":200}"`
-
----
-
-```
-{
-  "from": "you",
-  "to": "me",
-  "amount": 200
-}
-```
-
----
+| Command                                                        |      Description                                                                         |
+|----------------------------------------------------------------|------------------------------------------------------------------------------------------|
+|`sudo update-alternatives --config java `                       |Switch between java versions in a Linux setup.                                            |

@@ -1,4 +1,4 @@
-# CMD Prompt Commands
+### CMD Prompt Commands
 
 
 |    Command |  Description                                                                                      |
@@ -22,5 +22,13 @@
 - Press **alt** + **D**
 - Type **cmd**
 - Press **enter**
+
+---
+
+### Find the WiFi Password on Windows
+
+```
+netsh wlan show profile name=YOUR_WIRELESS_SSID key=clear
+```
 
 ---
