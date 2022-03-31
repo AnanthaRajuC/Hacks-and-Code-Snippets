@@ -4,6 +4,18 @@ DML - Data Manipulation Language - INSERT, UPDATE, DELETE
 DTL/TCL - Data Transition/Transition Control Language - COMMIT, ROLLBACK, SAVE POINT
 DCL - Data Control Language - GRANT, REVOKE
 
+****************************************************************************************
+
+-- Insert/Load data into table via shell
+
+mysql -u USERNAME -pPASSWORD
+show databases;
+create database DATABASE_NAME;
+use DATABASE_NAME;
+source db_insert_statement.sql;
+
+****************************************************************************************
+
 SELECT user,authentication_string,plugin,host FROM mysql.user;
 
 -- List all the users;
