@@ -13,3 +13,6 @@ SHOW TABLES;
 DESCRIBE [table_name];
 
 ****************************************************************************************
+
+cd /etc/mysql/mysql.conf.d
+cat mysqld.cnf

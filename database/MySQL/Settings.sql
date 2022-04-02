@@ -37,6 +37,10 @@ UPDATE mysql.user SET Password=PASSWORD('[password]') WHERE User='[username]';
 SELECT VERSION();
 
 SHOW VARIABLES LIKE "%version%";
+SHOW VARIABLES LIKE "secure_file_priv";
+SHOW GLOBAL VARIABLES LIKE 'local_infile';
+
+SET global local_infile=true;
 
 ****************************************************************************************
                        
@@ -44,8 +48,8 @@ SHOW VARIABLES LIKE "%version%";
 -- https://dev.mysql.com/doc/refman/8.0/en/server-status-variables.html
   
 -- the number of active connections                       
-show status 
-where `variable_name` = 'Threads_connected';      
+SHOW status 
+WHERE `variable_name` = 'Threads_connected';      
                        
 -- aggregate values over all connections  
 SHOW GLOBAL STATUS;
@@ -54,7 +58,7 @@ SHOW GLOBAL STATUS;
 SHOW SESSION STATUS;                       
                        
 -- show processlist
-show processlist;    
+SHOW processlist;    
 
 ****************************************************************************************
  
