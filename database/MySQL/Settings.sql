@@ -24,6 +24,146 @@ analyze table [schema.table_name];
 -- List Unused indexes
 select * from sys.schema_unused_indexes;
 
+SHOW COLUMNS FROM [schema.table_name];
+
+RENAME TABLE [schema.table_name_old] TO [schema.table_name_new];
+
+-- show tables starting with inv
+SHOW TABLES LIKE 'inv%';
+
+SELECT * FROM mysql.user WHERE user = 'root';
+
+****************************************************************************************
+
+-- authentication plugins --
+-- caching_sha2_password
+-- mysql_native_password
+SELECT plugin FROM mysql.user WHERE user = 'USERNAME' AND host = 'IPADDRESS';
+
+-- modify the authentication plugin used
+ALTER USER 'USERNAME'@'IPADDRESS' IDENTIFIED WITH mysql_native_password;
+
+****************************************************************************************
+
+-- Changing user’s password
+
+ALTER USER 'USERNAME'@'IPADDRESS' IDENTIFIED by 'new password';
+
+SET PASSWORD FOR 'USERNAME'@'IPADDRESS' = 'new password';
+
+****************************************************************************************
+
+-- Locking and unlocking a user
+
+ALTER USER 'USERNAME'@'IPADDRESS' ACCOUNT LOCK;
+
+ALTER USER 'USERNAME'@'IPADDRESS' ACCOUNT UNLOCK;
+
+****************************************************************************************
+
+mysql -uUSERNAME -p
+
+****************************************************************************************
+
+-- Instead of blocking off the user’s access completely, or changing the password for them, you may instead want to force them to change their password.
+ALTER USER 'USERNAME'@'IPADDRESS' PASSWORD EXPIRE;
+
+****************************************************************************************
+
+-- Dropping the User
+DROP USER IF EXISTS 'USERNAME'@'IPADDRESS';
+
+****************************************************************************************
+
+RENAME USER 'USERNAME_OLD'@'IPADDRESS_OLD' TO 'USERNAME_NEW'@'IPADDRESS_NEW';
+
+****************************************************************************************
+mysqldump -u USERNAME -p DATABASENAME > /path/to/download/FILENAME.sql
+
+mysqldump -u USERNAME -p DATABASENAME TABLENAME > /path/to/download/FILENAME.sql
+
+mysqldump -u USERNAME -p DATABASENAME TABLENAME --where="actor_id > 195"
+
+-- https://www.sqlshack.com/how-to-backup-and-restore-mysql-databases-using-the-mysqldump-command/
+-- https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html#mysqldump-option-examples
+-- https://www.percona.com/doc/percona-xtrabackup/LATEST/intro.html
+
+free -h
+****************************************************************************************
+
+SELECT EVENT_SCHEMA AS obj_schema
+    , EVENT_NAME obj_name
+    , 'EVENT' AS obj_type
+FROM INFORMATION_SCHEMA.EVENTS
+WHERE DEFINER = 'bob@localhost'
+UNION
+SELECT ROUTINE_SCHEMA AS obj_schema
+    , ROUTINE_NAME AS obj_name
+    , ROUTINE_TYPE AS obj_type
+FROM INFORMATION_SCHEMA.ROUTINES
+WHERE DEFINER = 'bob@localhost'
+UNION
+SELECT TRIGGER_SCHEMA AS obj_schema
+    , TRIGGER_NAME AS obj_name
+    , 'TRIGGER' AS obj_type
+FROM INFORMATION_SCHEMA.TRIGGERS
+WHERE DEFINER = 'bob@localhost'
+UNION
+SELECT TABLE_SCHEMA AS obj_scmea
+    , TABLE_NAME AS obj_name
+    , 'VIEW' AS obj_type
+FROM INFORMATION_SCHEMA.VIEWS
+WHERE DEFINER = 'bob@localhost';
+
+****************************************************************************************
+
+SHOW PRIVILEGES;
+
+-- grant tables
+
+-- User accounts, static global privileges, and other nonprivilege columns.
+mysql.user
+
+-- Dynamic global privileges.
+mysql.global_grants 
+
+-- Database-level privileges.
+mysql.db 
+
+-- Table-level privileges.
+mysql.tables_priv
+
+-- Column-level privileges.
+mysql.columns_priv 
+
+-- Stored procedure and function privileges.
+mysql.procs_priv 
+
+-- Proxy-user privileges.
+mysql.proxies_priv
+
+-- Default user roles.
+mysql.default_roles
+
+-- Edges for role subgraphs.
+mysql.role_edges
+
+-- Password change history.
+mysql.password_history
+
+****************************************************************************************
+
+-- list the character sets available on the server
+SHOW CHARACTER SET;
+
+-- list the collation orders and the character sets they apply to
+SHOW COLLATION;
+
+SHOW VARIABLES LIKE 'c%';
+SHOW TABLES FROM mysql LIKE '%priv';
+
+SHOW WARNINGS;
+
 ****************************************************************************************
 
 USE mysql;
@@ -39,6 +179,15 @@ ADD INDEX (column_name2);
 
 ALTER TABLE [schema.table_name] ADD INDEX (column_name1);
 
+****************************************************************************************
+CREATE ROLE application_rw;
+GRANT ALL ON sakila.* TO application_rw;
+
+CREATE ROLE application_ro;
+GRANT SELECT ON sakila.* TO application_ro;
+GRANT application_ro TO 'USERNAME'@'IPADDRESS';
+SHOW GRANTS FOR 'USERNAME'@'IPADDRESS';
+SHOW GRANTS FOR 'USERNAME'@'IPADDRESS' USING `application_ro`;
 ****************************************************************************************
 -- when we grant some privileges for a user, running the command flush privileges will 
 -- reload the grant tables in the mysql database enabling the changes to take effect without 
