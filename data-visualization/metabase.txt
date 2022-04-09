@@ -1,0 +1,10 @@
+https://www.metabase.com/
+
+https://www.metabase.com/docs/latest/operations-guide/running-the-metabase-jar-file.html
+https://www.metabase.com/docs/latest/operations-guide/running-metabase-on-docker.html
+
+
+This is the only command you’ll need:
+java -jar metabase.jar
+
+This will launch a Metabase server on port 3000 by default.

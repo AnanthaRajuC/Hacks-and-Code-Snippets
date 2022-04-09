@@ -1,5 +1,14 @@
 # Linux Commands
 
+## Services
+
+|       Command              |                         Description                          |
+|----------------------------|--------------------------------------------------------------| 
+|`sudo service mysql stop`   | stop MySQL server                                            |
+|`sudo service mysql start`  | start MySQL server                                           |
+|`sudo service mysql restart`| restart MySQL server                                         |
+|`sudo service mysql status` | check MySQL server status (i.e. whether it is running or not)|
+
 ## Update
 
 |       Command         |                         Description                                                                                                                                                      |

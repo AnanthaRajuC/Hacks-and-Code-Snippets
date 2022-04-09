@@ -1,6 +1,11 @@
 DQL - Data Query Language - SELECT
 
--- Functions
+-- String Functions
+-- Numeric Functions
+-- Date Functions
+-- Aggregate Functions: operates on all of the data types and produces summarized result sets
+
+****************************************************************************************
 
 -- select largest value of a column
 
@@ -28,3 +33,10 @@ SELECT COUNT(DISTINCT [column_name])
 FROM [schema.table_name];
 
 ****************************************************************************************
+
+select SUM(amount) AS total_sales from sakila.payment;
+					   
+					   
+					   
+					   
+					   
