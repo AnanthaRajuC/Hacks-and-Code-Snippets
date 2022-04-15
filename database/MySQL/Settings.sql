@@ -1,8 +1,17 @@
-
+-- LINUX
 -- MySQL Database server configuration file
 /etc/mysql/mysql.conf.d/mysqld.cnf
-
 /etc/mysql/mysql.conf.d/mysql.cnf
+
+which mysql
+
+systemctl stop mysql.service
+systemctl start mysql.service
+
+service mysql restart
+
+journalctl
+journalctl -f -u mysql.service
 
 ****************************************************************************************
 
@@ -151,8 +160,12 @@ SHOW GLOBAL VARIABLES LIKE 'local_infile';
 SHOW VARIABLES LIKE 'validate_password%';
 SET GLOBAL validate_password.length = 4;
 SET GLOBAL validate_password.policy = LOW;
+SET foreign_key_checks=0;
 
 select * from mysql.plugin;
+
+select @@datadir;
+select @@lower_case_table_names;
 
 ****************************************************************************************
                        
