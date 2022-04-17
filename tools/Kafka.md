@@ -21,31 +21,31 @@
 
 ## Example
 
-~/kafka/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic TutorialTopic
+`~/kafka/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic TutorialTopic`
 
-echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TutorialTopic > /dev/null
+`echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TutorialTopic > /dev/null`
 
-~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic TutorialTopic --from-beginning
+`~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic TutorialTopic --from-beginning`
 
-echo "Hello World from Sammy at DigitalOcean!" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TutorialTopic > /dev/null
+`echo "Hello World from Sammy at DigitalOcean!" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TutorialTopic > /dev/null`
 
 ## Files
 
 ~/kafka/config/server.properties  
-/etc/systemd/system/zookeeper.service
-/etc/systemd/system/kafka.service
+/etc/systemd/system/zookeeper.service  
+/etc/systemd/system/kafka.service  
 
 ## Services
 
-sudo systemctl stop kafka  
-sudo systemctl start kafka  
-sudo systemctl status kafka  
+- sudo systemctl stop kafka  
+- sudo systemctl start kafka  
+- sudo systemctl status kafka  
 
 sudo systemctl daemon-reload
 
 ## Systemd Logs
 
-journalctl -u kafka.service
+- journalctl -u kafka.service
 
 ## Debugging
 
