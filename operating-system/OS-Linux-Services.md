@@ -19,4 +19,14 @@ sudo pmap -x <process pid>
 	
 ps -eo size,pid,user,command --sort -size | \
     awk '{ hr=$1/1024 ; printf("%13.2f Mb ",hr) } { for ( x=4 ; x<=NF ; x++ ) { printf("%s ",$x) } print "" }' |\
-    cut -d "" -f2 | cut -d "-" -f1	
+    cut -d "" -f2 | cut -d "-" -f1	   
+	
+	
+
+
+give you your public IP address as read from another location on the internet:
+curl -4 icanhazip.com	
+	
+	
+server’s IP address	  
+hostname -I   
