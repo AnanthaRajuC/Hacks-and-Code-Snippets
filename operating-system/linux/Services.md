@@ -30,3 +30,6 @@ curl -4 icanhazip.com
 	
 server’s IP address	  
 hostname -I   
+
+
+`curl https://ipinfo.io/ip` - Command for determining my public IP
