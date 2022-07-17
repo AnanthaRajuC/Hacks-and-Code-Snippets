@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  zookeeper:
+    image: bitnami/zookeeper
+    container_name: zookeeper
+    ports:
+      - "2186:2181"
+    environment:
+      ALLOW_ANONYMOUS_LOGIN: "yes"
+      ZOOKEEPER_TICK_TIME: 2000
+
+  kafka:
+    image: bitnami/kafka
+    container_name: kafka
+    ports:
+      - "9092:9092"
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ADVERTISED_HOST_NAME: localhost
+      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2186'
+      ALLOW_PLAINTEXT_LISTENER: "yes"
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
