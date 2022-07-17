@@ -9,8 +9,10 @@ services:
     image: debezium/example-mysql:1.2
     container_name: mysql
     ports:
-      - 3306:3306
+      - 3307:3306
     environment:
       - MYSQL_ROOT_PASSWORD=debezium
       - MYSQL_USER=mysqluser
       - MYSQL_PASSWORD=mysqlpw
+    volumes:
+      - ${PWD}/data/movies.sql:/docker-entrypoint-initdb.d/z99_dump.sql
