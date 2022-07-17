@@ -1,0 +1,16 @@
+---
+version: '2'
+services:
+  mysql:
+    # *-----------------------------*
+    # To connect to the DB: 
+    #   docker-compose exec mysql bash -c 'mysql -u root -p$MYSQL_ROOT_PASSWORD'
+    # *-----------------------------*
+    image: debezium/example-mysql:1.2
+    container_name: mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=debezium
+      - MYSQL_USER=mysqluser
+      - MYSQL_PASSWORD=mysqlpw
