@@ -1,3 +1,16 @@
+SELECT GROUP_CONCAT(CONCAT('kill ( ',id,');') SEPARATOR ' ') KillQuery FROM information_schema.processlist WHERE user <> 'system' AND time >= 1200;
+
+select id, USER , HOST, DB , COMMAND ,TIME, STATE from information_schema.PROCESSLIST where command='Query';
+
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+set GLOBAL max_connections = 1200;
+SET GLOBAL max_allowed_packet=16777216;
+SET GLOBAL MAX_EXECUTION_TIME=1000000;
+SET sql_log_bin = 0;
+
+
+
+
 -- LINUX
 -- MySQL Database server configuration file
 /etc/mysql/mysql.conf.d/mysqld.cnf
