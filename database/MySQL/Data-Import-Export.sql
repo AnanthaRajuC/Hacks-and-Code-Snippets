@@ -1,3 +1,6 @@
+mysql --host=localhost --user=backup --password=backup -e "DROP DATABASE IF EXISTS cars_db; CREATE DATABASE cars_db; USE cars_db;"
+pv cars_db.gz | gunzip | mysql --host=localhost  --user=backup --password=backup cars_db
+
 -- drop schema
 DROP SCHEMA
 IF EXISTS [schema_name];
