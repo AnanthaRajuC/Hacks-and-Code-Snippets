@@ -13,7 +13,7 @@
 |     Application  |          Command        |
 |------------------|-------------------------|
 |Docker            |`docker version`         |
-|Docker Compose    |`docker-compose version` |
+|Docker Compose    |`docker compose version` |
 |minikube          |`minikube update-check`  |
 |minikube          |`minikube version`       |
 |Kubectl           |`kubectl version -o yaml`|
@@ -26,6 +26,7 @@
 |MongoDB            |`mongo version`        |
 |PostgreSQL (Server)|`postgres -V`          |
 |psql -V (client)   |`psql -V`              |
+|MySQL              |`mysql -V`             |
 
 ## Programming Languages
 
