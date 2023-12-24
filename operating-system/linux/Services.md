@@ -13,6 +13,27 @@ sudo systemctl status logstash
 sudo systemctl enable logstash
 sudo systemctl disable logstash
 
+sudo systemctl start mysql.service
+sudo systemctl stop mysql.service
+
+/etc/mysql/mysql.conf.cnf
+
+sudo su
+
+node --version
+npm -v
+sudo apt-get remove nodejs
+
+journalctl
+journalctl -f -u mysql.service
+
+mysqldump -u admin -ppassword mydb > mydb.sql
+
+mysql -u USERNAME -pPASSWORD
+show databases;
+create database my_database_name;
+use my_database_name;
+
 memory usage by each process
 
 sudo pmap -x <process pid>
@@ -22,6 +43,8 @@ ps -eo size,pid,user,command --sort -size | \
     cut -d "" -f2 | cut -d "-" -f1	   
 	
 	
+java -cp 06_FarmerOnboarding-1.0-SNAPSHOT-jar-with-dependencies.jar com.pcf.OnboardingMain
+
 
 
 give you your public IP address as read from another location on the internet:
