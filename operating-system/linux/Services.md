@@ -1,22 +1,46 @@
+~~~shell
+sudo systemctl start apache2.service
+sudo systemctl stop apache2.service
+sudo systemctl restart apache2.service
+sudo systemctl status apache2.service
+~~~
+
+~~~shell
 sudo systemctl stop elasticsearch
 sudo systemctl status elasticsearch
 sudo systemctl enable elasticsearch
 sudo systemctl disable elasticsearch
+~~~
 
+~~~shell
 sudo systemctl stop kibana
 sudo systemctl status kibana
 sudo systemctl enable kibana
 sudo systemctl disable kibana
+~~~
 
+~~~shell
 sudo systemctl stop logstash
 sudo systemctl status logstash
 sudo systemctl enable logstash
 sudo systemctl disable logstash
+~~~
 
+~~~shell
+which mysql
+
+sudo systemctl status mysql
 sudo systemctl start mysql.service
 sudo systemctl stop mysql.service
+service mysql restart
 
-/etc/mysql/mysql.conf.cnf
+journalctl -f -u mysql.service
+~~~
+
+~~~shell
+cat /etc/mysql/mysql.conf.d/mysqld.cnf
+cat /etc/mysql/mysql.conf.d/mysql.cnf
+~~~
 
 sudo su
 
